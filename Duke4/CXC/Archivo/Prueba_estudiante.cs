@@ -136,7 +136,7 @@ namespace Duke4.CXC.Archivo
                 mskCedula1.Text = ds.Tables[0].Rows[0]["cedula"].ToString();
 
 
-
+     
 
 
 

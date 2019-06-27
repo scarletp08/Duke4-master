@@ -14,5 +14,10 @@ namespace Duke4.CXC.Proceso
         {
             InitializeComponent();
         }
+
+        private void Txtncf_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

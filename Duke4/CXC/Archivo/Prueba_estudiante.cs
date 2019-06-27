@@ -199,8 +199,7 @@ namespace Duke4.CXC.Archivo
                      Funciones_Duke4.Funciones.Fun_Convertir_Bool_aInt(Ckbestado.Checked),
 
 
-              Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(Cmbsexo.SelectedIndex.ToString())
-            ,
+              Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(Cmbsexo.SelectedIndex.ToString()),
               grado,
             msktelefono.Text          ,
               mskCedula1.Text,

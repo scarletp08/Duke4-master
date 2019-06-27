@@ -1,0 +1,1360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{060E2136-AF4B-4638-A9D5-7A9F0B088E6E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Duke4</RootNamespace>
+    <AssemblyName>Duke4</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Funciones_Duke4">
+      <HintPath>\\10.0.1.242\SPS_Documentos\SPS_Fuentes\SPS4\Funciones_Duke4\Funciones_Duke4\bin\Debug\Funciones_Duke4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anular_Documento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anular_Documento.designer.cs">
+      <DependentUpon>Anular_Documento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancelarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelarForm.designer.cs">
+      <DependentUpon>CancelarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta_General\MainFormConsultaGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta_General\MainFormConsultaGeneral.designer.cs">
+      <DependentUpon>MainFormConsultaGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta_General\MFConsulta_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta_General\MFConsulta_Cliente.designer.cs">
+      <DependentUpon>MFConsulta_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Archivo\Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Archivo\Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Archivo\Prueba3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Archivo\Prueba3.Designer.cs">
+      <DependentUpon>Prueba3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Archivo\Prueba_estudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Archivo\Prueba_estudiante.Designer.cs">
+      <DependentUpon>Prueba_estudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepacuerdodepagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepacuerdodepagos.Designer.cs">
+      <DependentUpon>cxcrepacuerdodepagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_General\DSCXC.cs">
+      <DependentUpon>DSCXC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_General\DSCXC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCXC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_General\DSGEN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSGEN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="controlNCF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controlNCF.Designer.cs">
+      <DependentUpon>controlNCF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormMantEspecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormMantEspecial.designer.cs">
+      <DependentUpon>MainFormMantEspecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepchequesfuturos001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepchequesfuturos001.Designer.cs">
+      <DependentUpon>cxcrepchequesfuturos001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_ConsultaGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_ConsultaGeneral.designer.cs">
+      <DependentUpon>_ConsultaGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\Report\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\Report\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\Report\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_cancelar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_cancelar.Designer.cs">
+      <DependentUpon>_cancelar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_codificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_codificar.Designer.cs">
+      <DependentUpon>_codificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_conModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_conModify.Designer.cs">
+      <DependentUpon>_conModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_conVMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_conVMenu.Designer.cs">
+      <DependentUpon>_conVMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmancliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmancliente.Designer.cs">
+      <DependentUpon>cxcmancliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmanconceptos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmanconceptos.designer.cs">
+      <DependentUpon>cxcmanconceptos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmancondiciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmancondiciones.designer.cs">
+      <DependentUpon>cxcmancondiciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmanMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmanMoneda.designer.cs">
+      <DependentUpon>cxcmanMoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmanmunicipios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmanmunicipios.designer.cs">
+      <DependentUpon>cxcmanmunicipios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmanprovincias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmanprovincias.designer.cs">
+      <DependentUpon>cxcmanprovincias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmanregiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmanregiones.designer.cs">
+      <DependentUpon>cxcmanregiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmanrutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmanrutas.Designer.cs">
+      <DependentUpon>cxcmanrutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmansectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmansectores.designer.cs">
+      <DependentUpon>cxcmansectores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmantipocliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Archivo\cxcmantipocliente.designer.cs">
+      <DependentUpon>cxcmantipocliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Archivo\pruebascr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Archivo\pruebascr.Designer.cs">
+      <DependentUpon>pruebascr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcconcobroadelantado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcconcobroadelantado.Designer.cs">
+      <DependentUpon>cxcconcobroadelantado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcconmovimientoregistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcconmovimientoregistro.Designer.cs">
+      <DependentUpon>cxcconmovimientoregistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcconreciboingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcconreciboingreso.Designer.cs">
+      <DependentUpon>cxcconreciboingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxccondebcre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxccondebcre.Designer.cs">
+      <DependentUpon>cxccondebcre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcconotroingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcconotroingreso.Designer.cs">
+      <DependentUpon>cxcconotroingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcconchequedevuelto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcconchequedevuelto.Designer.cs">
+      <DependentUpon>cxcconchequedevuelto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcconchequefuturo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcconchequefuturo.Designer.cs">
+      <DependentUpon>cxcconchequefuturo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcconregistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcconregistro.Designer.cs">
+      <DependentUpon>cxcconregistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcprechequedevuelto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcprechequedevuelto.Designer.cs">
+      <DependentUpon>cxcprechequedevuelto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcprechequefuturo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcprechequefuturo.Designer.cs">
+      <DependentUpon>cxcprechequefuturo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcprecobroadelantado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcprecobroadelantado.Designer.cs">
+      <DependentUpon>cxcprecobroadelantado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcpredebcre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcpredebcre.Designer.cs">
+      <DependentUpon>cxcpredebcre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcpreotroingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcpreotroingreso.Designer.cs">
+      <DependentUpon>cxcpreotroingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcprereciboingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcprereciboingreso.Designer.cs">
+      <DependentUpon>cxcprereciboingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcpreregistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Consulta\cxcpreregistro.Designer.cs">
+      <DependentUpon>cxcpreregistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcprobalanceinicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcprobalanceinicial.designer.cs">
+      <DependentUpon>cxcprobalanceinicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcprochequedevuelto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcprochequedevuelto.Designer.cs">
+      <DependentUpon>cxcprochequedevuelto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcproacuerdopago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcproacuerdopago.Designer.cs">
+      <DependentUpon>cxcproacuerdopago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcprochequefuturo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcprochequefuturo.designer.cs">
+      <DependentUpon>cxcprochequefuturo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcprootroingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcprootroingreso.Designer.cs">
+      <DependentUpon>cxcprootroingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcprocobroadelantado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcprocobroadelantado.Designer.cs">
+      <DependentUpon>cxcprocobroadelantado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcprodebcre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcprodebcre.Designer.cs">
+      <DependentUpon>cxcprodebcre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcproreciboingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcproreciboingreso.Designer.cs">
+      <DependentUpon>cxcproreciboingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcproregistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Proceso\cxcproregistro.designer.cs">
+      <DependentUpon>cxcproregistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepbalanceaunafecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepbalanceaunafecha.Designer.cs">
+      <DependentUpon>cxcrepbalanceaunafecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepchequesdevuelto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepchequesdevuelto.Designer.cs">
+      <DependentUpon>cxcrepchequesdevuelto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepchequesfuturos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepchequesfuturos.Designer.cs">
+      <DependentUpon>cxcrepchequesfuturos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepclientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepclientes.designer.cs">
+      <DependentUpon>cxcrepclientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepcobrosporadelantado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepcobrosporadelantado.Designer.cs">
+      <DependentUpon>cxcrepcobrosporadelantado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrephistoricodepagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrephistoricodepagos.Designer.cs">
+      <DependentUpon>cxcrephistoricodepagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepnotasdebito-credito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepnotasdebito-credito.Designer.cs">
+      <DependentUpon>cxcrepnotasdebito-credito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepotrosingresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepotrosingresos.designer.cs">
+      <DependentUpon>cxcrepotrosingresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepreciboingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepreciboingreso.Designer.cs">
+      <DependentUpon>cxcrepreciboingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepregistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Reporte\cxcrepregistro.designer.cs">
+      <DependentUpon>cxcrepregistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXP\Proceso\cxpproregistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXP\Proceso\cxpproregistro.Designer.cs">
+      <DependentUpon>cxpproregistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enviar_Mail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enviar_Mail.designer.cs">
+      <DependentUpon>Enviar_Mail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IForm.cs" />
+    <Compile Include="Logistica\CuadroHerramientas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Logistica\FuncionesSQL.cs" />
+    <Compile Include="Logistica\Mensajes.cs" />
+    <Compile Include="MainBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainBar.designer.cs">
+      <DependentUpon>MainBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormConsulta.designer.cs">
+      <DependentUpon>MainFormConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormMant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormMant.Designer.cs">
+      <DependentUpon>MainFormMant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormPresentar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormPresentar.designer.cs">
+      <DependentUpon>MainFormPresentar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormProceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormProceso.designer.cs">
+      <DependentUpon>MainFormProceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormReportes.designer.cs">
+      <DependentUpon>MainFormReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPanel.designer.cs">
+      <DependentUpon>MainPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainReporte.designer.cs">
+      <DependentUpon>MainReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_mantenimientoVMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_mantenimientoVMenu.designer.cs">
+      <DependentUpon>_mantenimientoVMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opcion_Pago\Archivo\genmantipopago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opcion_Pago\Archivo\genmantipopago.designer.cs">
+      <DependentUpon>genmantipopago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opcion_Pago\Proceso\Cobro_Transferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opcion_Pago\Proceso\Cobro_Transferencia.designer.cs">
+      <DependentUpon>Cobro_Transferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opcion_Pago\Proceso\Cobro_Efectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opcion_Pago\Proceso\Cobro_Efectivo.designer.cs">
+      <DependentUpon>Cobro_Efectivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opcion_Pago\Proceso\Cobro_Tarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opcion_Pago\Proceso\Cobro_Tarjeta.designer.cs">
+      <DependentUpon>Cobro_Tarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opcion_Pago\Proceso\Cobro_Cheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opcion_Pago\Proceso\Cobro_Cheque.designer.cs">
+      <DependentUpon>Cobro_Cheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opcion_Pago\Proceso\genpropago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opcion_Pago\Proceso\genpropago.designer.cs">
+      <DependentUpon>genpropago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporte_General\CXC\cxcrepacuerdodepago001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepacuerdodepago001.Designer.cs">
+      <DependentUpon>cxcrepacuerdodepago001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepchequedevuelto01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepchequedevuelto01.designer.cs">
+      <DependentUpon>cxcrepchequedevuelto01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepchequefuturo01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepchequefuturo01.designer.cs">
+      <DependentUpon>cxcrepchequefuturo01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepcliente001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepcliente001.designer.cs">
+      <DependentUpon>cxcrepcliente001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepcobros001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepcobros001.Designer.cs">
+      <DependentUpon>cxcrepcobros001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepcobrosporadelantado001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepcobrosporadelantado001.Designer.cs">
+      <DependentUpon>cxcrepcobrosporadelantado001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepdebitocredito001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepdebitocredito001.Designer.cs">
+      <DependentUpon>cxcrepdebitocredito001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepotroingreso001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepotroingreso001.designer.cs">
+      <DependentUpon>cxcrepotroingreso001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepotroingreso01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepotroingreso01.Designer.cs">
+      <DependentUpon>cxcrepotroingreso01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepcobroadelantadodetalle01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepcobroadelantadodetalle01.Designer.cs">
+      <DependentUpon>cxcrepcobroadelantadodetalle01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepcobro01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepcobro01.Designer.cs">
+      <DependentUpon>cxcrepcobro01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepcobroadelantado01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepcobroadelantado01.Designer.cs">
+      <DependentUpon>cxcrepcobroadelantado01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepdebcre01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepdebcre01.Designer.cs">
+      <DependentUpon>cxcrepdebcre01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepregistro001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepregistro001.designer.cs">
+      <DependentUpon>cxcrepregistro001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepregistro01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\CXC\cxcrepregistro01.Designer.cs">
+      <DependentUpon>cxcrepregistro01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_newColor2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_newColor2.Designer.cs">
+      <DependentUpon>_newColor2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_newColor3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_newColor3.Designer.cs">
+      <DependentUpon>_newColor3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_newColor4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_newColor4.Designer.cs">
+      <DependentUpon>_newColor4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_newColor5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_newColor5.Designer.cs">
+      <DependentUpon>_newColor5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_newColor6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_newColor6.Designer.cs">
+      <DependentUpon>_newColor6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_newColor7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_newColor7.Designer.cs">
+      <DependentUpon>_newColor7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_newColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_newColor.Designer.cs">
+      <DependentUpon>_newColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_newColor8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_newColor8.Designer.cs">
+      <DependentUpon>_newColor8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_procVMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_procVMenu.Designer.cs">
+      <DependentUpon>_procVMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_newDesign\_repoVMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_newDesign\_repoVMenu.Designer.cs">
+      <DependentUpon>_repoVMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Anular_Documento.resx">
+      <DependentUpon>Anular_Documento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelarForm.resx">
+      <DependentUpon>CancelarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta_General\MainFormConsultaGeneral.resx">
+      <DependentUpon>MainFormConsultaGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta_General\MFConsulta_Cliente.resx">
+      <DependentUpon>MFConsulta_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Archivo\Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Archivo\Prueba3.resx">
+      <DependentUpon>Prueba3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Archivo\Prueba_estudiante.resx">
+      <DependentUpon>Prueba_estudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormMantEspecial.resx">
+      <DependentUpon>MainFormMantEspecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\cxcrepacuerdodepagos.resx">
+      <DependentUpon>cxcrepacuerdodepagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controlNCF.resx">
+      <DependentUpon>controlNCF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepchequesfuturos002.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepchequesfuturos001.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepchequesfuturos001.resx">
+      <DependentUpon>cxcrepchequesfuturos001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobros007.rdlc" />
+    <EmbeddedResource Include="_newDesign\_ConsultaGeneral.resx">
+      <DependentUpon>_ConsultaGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\Report\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\Report\Report1.rdlc" />
+    <EmbeddedResource Include="_newDesign\_cancelar.resx">
+      <DependentUpon>_cancelar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\_codificar.resx">
+      <DependentUpon>_codificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\_conModify.resx">
+      <DependentUpon>_conModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\_conVMenu.resx">
+      <DependentUpon>_conVMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Archivo\cxcmancliente.resx">
+      <DependentUpon>cxcmancliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Archivo\cxcmanconceptos.resx">
+      <DependentUpon>cxcmanconceptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Archivo\cxcmancondiciones.resx">
+      <DependentUpon>cxcmancondiciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Archivo\cxcmanMoneda.resx">
+      <DependentUpon>cxcmanMoneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Archivo\cxcmanmunicipios.resx">
+      <DependentUpon>cxcmanmunicipios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Archivo\cxcmanprovincias.resx">
+      <DependentUpon>cxcmanprovincias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Archivo\cxcmanregiones.resx">
+      <DependentUpon>cxcmanregiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Archivo\cxcmanrutas.resx">
+      <DependentUpon>cxcmanrutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Archivo\cxcmansectores.resx">
+      <DependentUpon>cxcmansectores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Archivo\cxcmantipocliente.resx">
+      <DependentUpon>cxcmantipocliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Archivo\pruebascr.resx">
+      <DependentUpon>pruebascr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Consulta\cxcconcobroadelantado.resx">
+      <DependentUpon>cxcconcobroadelantado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Consulta\cxcconmovimientoregistro.resx">
+      <DependentUpon>cxcconmovimientoregistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Consulta\cxcconreciboingreso.resx">
+      <DependentUpon>cxcconreciboingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Consulta\cxccondebcre.resx">
+      <DependentUpon>cxccondebcre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Consulta\cxcconotroingreso.resx">
+      <DependentUpon>cxcconotroingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Consulta\cxcconchequedevuelto.resx">
+      <DependentUpon>cxcconchequedevuelto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Consulta\cxcconchequefuturo.resx">
+      <DependentUpon>cxcconchequefuturo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Consulta\cxcconregistro.resx">
+      <DependentUpon>cxcconregistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Consulta\cxcprechequedevuelto.resx">
+      <DependentUpon>cxcprechequedevuelto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Consulta\cxcprechequefuturo.resx">
+      <DependentUpon>cxcprechequefuturo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Consulta\cxcprecobroadelantado.resx">
+      <DependentUpon>cxcprecobroadelantado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Consulta\cxcpredebcre.resx">
+      <DependentUpon>cxcpredebcre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Consulta\cxcpreotroingreso.resx">
+      <DependentUpon>cxcpreotroingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Consulta\cxcprereciboingreso.resx">
+      <DependentUpon>cxcprereciboingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Consulta\cxcpreregistro.resx">
+      <DependentUpon>cxcpreregistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Proceso\cxcprobalanceinicial.resx">
+      <DependentUpon>cxcprobalanceinicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Proceso\cxcprochequedevuelto.resx">
+      <DependentUpon>cxcprochequedevuelto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Proceso\cxcproacuerdopago.resx">
+      <DependentUpon>cxcproacuerdopago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Proceso\cxcprochequefuturo.resx">
+      <DependentUpon>cxcprochequefuturo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Proceso\cxcprootroingreso.resx">
+      <DependentUpon>cxcprootroingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Proceso\cxcprocobroadelantado.resx">
+      <DependentUpon>cxcprocobroadelantado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Proceso\cxcprodebcre.resx">
+      <DependentUpon>cxcprodebcre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Proceso\cxcproreciboingreso.resx">
+      <DependentUpon>cxcproreciboingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Proceso\cxcproregistro.resx">
+      <DependentUpon>cxcproregistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\cxcrepbalanceaunafecha.resx">
+      <DependentUpon>cxcrepbalanceaunafecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\cxcrepchequesdevuelto.resx">
+      <DependentUpon>cxcrepchequesdevuelto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\cxcrepchequesfuturos.resx">
+      <DependentUpon>cxcrepchequesfuturos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\cxcrepclientes.resx">
+      <DependentUpon>cxcrepclientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\cxcrepcobrosporadelantado.resx">
+      <DependentUpon>cxcrepcobrosporadelantado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\cxcrephistoricodepagos.resx">
+      <DependentUpon>cxcrephistoricodepagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\cxcrepnotasdebito-credito.resx">
+      <DependentUpon>cxcrepnotasdebito-credito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\cxcrepotrosingresos.resx">
+      <DependentUpon>cxcrepotrosingresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\cxcrepreciboingreso.resx">
+      <DependentUpon>cxcrepreciboingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\cxcrepregistro.resx">
+      <DependentUpon>cxcrepregistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXP\Proceso\cxpproregistro.resx">
+      <DependentUpon>cxpproregistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enviar_Mail.resx">
+      <DependentUpon>Enviar_Mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainBar.resx">
+      <DependentUpon>MainBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormConsulta.resx">
+      <DependentUpon>MainFormConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormMant.resx">
+      <DependentUpon>MainFormMant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormPresentar.resx">
+      <DependentUpon>MainFormPresentar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormProceso.resx">
+      <DependentUpon>MainFormProceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormReportes.resx">
+      <DependentUpon>MainFormReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPanel.resx">
+      <DependentUpon>MainPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainReporte.resx">
+      <DependentUpon>MainReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\_mantenimientoVMenu.resx">
+      <DependentUpon>_mantenimientoVMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcion_Pago\Archivo\genmantipopago.resx">
+      <DependentUpon>genmantipopago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcion_Pago\Proceso\Cobro_Transferencia.resx">
+      <DependentUpon>Cobro_Transferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcion_Pago\Proceso\Cobro_Efectivo.resx">
+      <DependentUpon>Cobro_Efectivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcion_Pago\Proceso\Cobro_Tarjeta.resx">
+      <DependentUpon>Cobro_Tarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcion_Pago\Proceso\Cobro_Cheque.resx">
+      <DependentUpon>Cobro_Cheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcion_Pago\Proceso\genpropago.resx">
+      <DependentUpon>genpropago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobros005.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobros0005.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobros002.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobros001.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepacuerdodepago001.resx">
+      <DependentUpon>cxcrepacuerdodepago001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepchequedevuelto01.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepchequedevuelto01.resx">
+      <DependentUpon>cxcrepchequedevuelto01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepchequefuturo01.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepchequefuturo01.resx">
+      <DependentUpon>cxcrepchequefuturo01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcliente001.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcliente001.resx">
+      <DependentUpon>cxcrepcliente001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcliente002.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcliente003.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcliente006.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcliente004.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcliente007.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepacuerdopago002.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepacuerdodepago003.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobros003.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobros001.resx">
+      <DependentUpon>cxcrepcobros001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobros006.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobrosporadelantado001.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobrosporadelantado001.resx">
+      <DependentUpon>cxcrepcobrosporadelantado001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepdebitocredito001.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepdebitocredito001.resx">
+      <DependentUpon>cxcrepdebitocredito001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepotroingreso001.resx">
+      <DependentUpon>cxcrepotroingreso001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepotroingreso01.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepotroingreso01.resx">
+      <DependentUpon>cxcrepotroingreso01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobroadelantadodetalle01.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobroadelantadodetalle01.resx">
+      <DependentUpon>cxcrepcobroadelantadodetalle01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobro01.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobro01.resx">
+      <DependentUpon>cxcrepcobro01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobroadelantado01.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobroadelantado01.resx">
+      <DependentUpon>cxcrepcobroadelantado01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepdebcre01.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepdebcre01.resx">
+      <DependentUpon>cxcrepdebcre01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepotroingreso001.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepregistro001.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepregistro001.resx">
+      <DependentUpon>cxcrepregistro001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepregistro01.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepregistro01.resx">
+      <DependentUpon>cxcrepregistro01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepregistro02.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepacuerdodepago001.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepregistro002.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepregistro003.rdlc" />
+    <EmbeddedResource Include="Reporte_General\CXC\cxcrepcliente005.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\_newColor2.resx">
+      <DependentUpon>_newColor2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\_newColor3.resx">
+      <DependentUpon>_newColor3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\_newColor4.resx">
+      <DependentUpon>_newColor4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\_newColor5.resx">
+      <DependentUpon>_newColor5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\_newColor6.resx">
+      <DependentUpon>_newColor6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\_newColor7.resx">
+      <DependentUpon>_newColor7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\_newColor.resx">
+      <DependentUpon>_newColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\_newColor8.resx">
+      <DependentUpon>_newColor8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\_procVMenu.resx">
+      <DependentUpon>_procVMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_newDesign\_repoVMenu.resx">
+      <DependentUpon>_repoVMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CXP\DataSet_General\DSCXC.xsc">
+      <DependentUpon>DSCXC.xsd</DependentUpon>
+    </None>
+    <None Include="CXP\DataSet_General\DSCXC.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCXC.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CXP\DataSet_General\DSCXC.xss">
+      <DependentUpon>DSCXC.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_General\DSCXC.xsc">
+      <DependentUpon>DSCXC.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_General\DSCXC.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCXC.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet_General\DSCXC.xss">
+      <DependentUpon>DSCXC.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_General\DSGEN.xsc">
+      <DependentUpon>DSGEN.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_General\DSGEN.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSGEN.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_General\DSGEN.xss">
+      <DependentUpon>DSGEN.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_newDesign\Report\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_newDesign\Report\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="_newDesign\Report\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go-back-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\funnel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icontexto-search-08_icon-icons.com_76904.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-engine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searching-magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\research.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupe %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupe %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rounded-add-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busqueda24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busqueda32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nolike32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nolike24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retornar24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retornar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crear24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crear32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retornar241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modificar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modificar24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consulta32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consulta24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salbar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvar24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %2815%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impresora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CXP\Archivo\" />
+    <Folder Include="CXP\Consulta\" />
+    <Folder Include="CXP\Reporte\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arriba24.png" />
+    <None Include="Resources\arriba26.png" />
+    <None Include="Resources\abajo24.png" />
+    <None Include="Resources\abajo26.png" />
+    <None Include="Resources\mop.png" />
+    <None Include="Resources\tap.png" />
+    <None Include="Resources\galonabajo.png" />
+    <None Include="Resources\abajo11.png" />
+    <None Include="Resources\abajo111.png" />
+    <None Include="Resources\abajoazul11.png" />
+    <None Include="Resources\barracontrol.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -111,6 +111,12 @@
     <Compile Include="CXC\Archivo\Prueba_estudiante.Designer.cs">
       <DependentUpon>Prueba_estudiante.cs</DependentUpon>
     </Compile>
+    <Compile Include="CXC\Proceso\Dateprocesoprueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Proceso\Dateprocesoprueba.Designer.cs">
+      <DependentUpon>Dateprocesoprueba.cs</DependentUpon>
+    </Compile>
     <Compile Include="CXC\Reporte\cxcrepacuerdodepagos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -755,6 +761,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CXC\Archivo\Prueba_estudiante.resx">
       <DependentUpon>Prueba_estudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Proceso\Dateprocesoprueba.resx">
+      <DependentUpon>Dateprocesoprueba.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>

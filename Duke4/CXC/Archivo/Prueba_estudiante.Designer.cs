@@ -149,7 +149,9 @@
             this.Txtcodigo.Name = "Txtcodigo";
             this.Txtcodigo.Size = new System.Drawing.Size(100, 23);
             this.Txtcodigo.TabIndex = 16;
+            this.Txtcodigo.TextChanged += new System.EventHandler(this.Txtcodigo_TextChanged);
             this.Txtcodigo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Txtcodigo_KeyDown);
+            this.Txtcodigo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Txtcodigo_KeyUp);
             this.Txtcodigo.Validating += new System.ComponentModel.CancelEventHandler(this.Txtcodigo_Validating);
             // 
             // Txtdescripcion

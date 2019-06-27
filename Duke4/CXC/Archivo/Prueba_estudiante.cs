@@ -19,7 +19,7 @@ namespace Duke4.CXC.Archivo
         private void Prueba_estudiante_Load(object sender, EventArgs e)
         {
             Fun_Set_Nombre_Formulario("Registro estudiante ", this);
-            array = new Control[] { Txtdescripcion };
+            array = new Control[] { Txtdescripcion,msktelefono,Cmbsexo };
             //Cmbsexo.SelectedIndex = 0;
             //Cmbsexo.Text = "Seleccione";
         }
@@ -116,7 +116,7 @@ namespace Duke4.CXC.Archivo
 
         private void Btnbuscar_Click(object sender, EventArgs e)
         {
-            MainFormConsultaGeneral consulta = new MainFormConsultaGeneral("select idestudiante as codigo, descripcion,correo from prudbfestudiante where nulo" + _ActivateParameter.ToString() + "nulo", "descripcion", "Estudiante");
+            MainFormConsultaGeneral consulta = new MainFormConsultaGeneral("select idestudiante as codigo, descripcion,sexo from prudbfestudiante where nulo" + _ActivateParameter.ToString() + "nulo", "descripcion", "Estudiante");
             if (consulta.ShowDialog(this) == DialogResult.OK)
             {
                 Txtcodigo.Text = consulta.MainGrid.SelectedRows[0].Cells[0].Value.ToString();
@@ -141,7 +141,7 @@ namespace Duke4.CXC.Archivo
 
 
 
-                LblEstado.Text = Funciones_Duke4.Funciones.Fun_Buscar_Estado_Registro(Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(ds.Tables[0].Rows[0]["nulo"].ToString()), _ActivateParameter);
+                //LblEstado.Text = Funciones_Duke4.Funciones.Fun_Buscar_Estado_Registro(Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(ds.Tables[0].Rows[0]["nulo"].ToString()), _ActivateParameter);
 
             }
             else
@@ -177,13 +177,7 @@ namespace Duke4.CXC.Archivo
                 {
                     grado = 3;
                 }
-            //Cmbsexo.SelectedIndex = 0;
-         
-            
-         
-
-           //Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(Cmbsexo.SelectedText);
-
+          
           
 
             Control[] array = { Txtcodigo, Txtdescripcion };
@@ -201,10 +195,10 @@ namespace Duke4.CXC.Archivo
 
               Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(Cmbsexo.SelectedIndex.ToString()),
               grado,
-            msktelefono.Text          ,
+              msktelefono.Text          ,
               mskCedula1.Text,
-                Txtcorreo.Text,
-                 Txtdescripcion.Text,
+              Txtcorreo.Text,
+              Txtdescripcion.Text,
                
                                        
                                       
@@ -243,6 +237,16 @@ namespace Duke4.CXC.Archivo
         {
             int contador = Cmbsexo.SelectedIndex;
 
+        }
+
+        private void Txtcodigo_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Txtcodigo_KeyUp(object sender, KeyEventArgs e)
+        {
+            
         }
     }
     

@@ -74,6 +74,27 @@
             this.MainPanel.Controls.Add(this.Txtotroingreso);
             this.MainPanel.Location = new System.Drawing.Point(1, 113);
             this.MainPanel.Size = new System.Drawing.Size(531, 242);
+            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
+            this.MainPanel.Controls.SetChildIndex(this.Txtotroingreso, 0);
+            this.MainPanel.Controls.SetChildIndex(this.lblBase1, 0);
+            this.MainPanel.Controls.SetChildIndex(this.BtnBuscarCobro, 0);
+            this.MainPanel.Controls.SetChildIndex(this.myLabel2, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Dtpfecha, 0);
+            this.MainPanel.Controls.SetChildIndex(this.BtnBuscarCliente, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtnombrecliente, 0);
+            this.MainPanel.Controls.SetChildIndex(this.myLabel4, 0);
+            this.MainPanel.Controls.SetChildIndex(this.label1, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtmonto, 0);
+            this.MainPanel.Controls.SetChildIndex(this.lblBase2, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtreferencia, 0);
+            this.MainPanel.Controls.SetChildIndex(this.myLabel3, 0);
+            this.MainPanel.Controls.SetChildIndex(this.myLabel16, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Cmbmoneda, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtconcepto, 0);
+            this.MainPanel.Controls.SetChildIndex(this.lblBase3, 0);
+            this.MainPanel.Controls.SetChildIndex(this.label2, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Ckbimprimir, 0);
+            this.MainPanel.Controls.SetChildIndex(this.LblFunctionName, 0);
             // 
             // LblAlerta
             // 
@@ -84,6 +105,8 @@
             // LblFunctionName
             // 
             this.LblFunctionName.Location = new System.Drawing.Point(744, 42);
+            this.LblFunctionName.Size = new System.Drawing.Size(0, 32);
+            this.LblFunctionName.Text = "";
             // 
             // panel2
             // 

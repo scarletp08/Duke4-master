@@ -169,5 +169,10 @@ namespace Duke4.CXC.Proceso
         {
             Funciones.Fun_Enfocar_Menu(e);
         }
+
+        private void MainPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

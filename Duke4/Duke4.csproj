@@ -123,6 +123,11 @@
     <Compile Include="CXC\Reporte\cxcrepacuerdodepagos.Designer.cs">
       <DependentUpon>cxcrepacuerdodepagos.cs</DependentUpon>
     </Compile>
+    <Compile Include="CXP\DataSet_General\DSCXC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCXC.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSet_General\DSCXC.cs">
       <DependentUpon>DSCXC.xsd</DependentUpon>
     </Compile>

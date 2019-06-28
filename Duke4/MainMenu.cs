@@ -439,5 +439,10 @@ namespace Duke4
         {
             CXC.Archivo.Prueba_estudiante formulario= (CXC.Archivo.Prueba_estudiante)AbrirVentana(typeof(CXC.Archivo.Prueba_estudiante));
         }
+
+        private void pruebaEstudianteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            CXC.Proceso.Dateprocesoprueba formulario = (CXC.Proceso.Dateprocesoprueba)AbrirVentana(typeof(CXC.Proceso.Dateprocesoprueba));
+        }
     }
 }

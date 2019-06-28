@@ -37,10 +37,10 @@ namespace Duke4.CXC.Archivo
             {
                 DataSet ds = TxtCodigo._Dataset;
                 Txtdescripcion.Text = ds.Tables[0].Rows[0]["descripcion"].ToString();
-                LblEstado.Text= Funciones_Duke4.Funciones.Fun_Buscar_Estado_Registro(Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero( ds.Tables[0].Rows[0]["nulo"].ToString()),_ActivateParameter);
+                LblEstado.Text = Funciones_Duke4.Funciones.Fun_Buscar_Estado_Registro(Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(ds.Tables[0].Rows[0]["nulo"].ToString()), _ActivateParameter);
 
-                
-                
+
+
             }
             else
             {
@@ -181,6 +181,11 @@ namespace Duke4.CXC.Archivo
         private void TxtCodigo_KeyDown(object sender, KeyEventArgs e)
         {
             Funciones_Duke4.Funciones.Fun_F2_Abrir_Consulta(e, btnBuscar);
+        }
+
+        private void MainPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

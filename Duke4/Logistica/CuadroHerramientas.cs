@@ -178,6 +178,7 @@ namespace Duke4.Logistica
                 e.Handled = true;
             }
         }
+        
         public bool Fun_SQL_Buscar_CodigoRegistro(string nombre_tabla_sql, string codigo_tabla_sql)
         {
             if (this.Text != string.Empty && _Codigo != this.Text)
@@ -236,7 +237,7 @@ namespace Duke4.Logistica
 
             return false;
         }
-
+       
         public bool Fun_SQL_Buscar_SecuenciaRegistro(string cmd)
         {
             if (this.Text != string.Empty)

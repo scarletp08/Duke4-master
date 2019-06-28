@@ -767,5 +767,10 @@ namespace Duke4.CXC.Proceso
             tasamoneda = FuncionesSQL.Fun_SQL_Buscar_Tasa_Moneda(Funciones.Fun_Convierte_String_aEntrero(Convert.ToString(Cmbmoneda.SelectedValue)));
 
         }
+
+        private void MainPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

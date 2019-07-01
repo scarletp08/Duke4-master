@@ -118,6 +118,27 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Btnbuscar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJ
+        TUUH4wQeFTki2EvoJQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMeSURBVEhL
+        nVVbSFRRFJ3vNE0nxaYYA02Q0QpDoaSC+i2KqM9KIzTpIxkfUCaWj8xyNK3AEVIxQS1FLXwzkpla6ViW
+        mQ8MZkzEx4dv7Wt193HueO+Z6zS0YQ2Xc85ea85+HRWc2OLqOvpHrKgymWFs6EZupYmBvmmN9hZX1m2n
+        lU1RYGF5DXXvB/Gwoh3ZL9ucgs40fxzG0uqGzVtuDgJjk7MwVHUokjmDQbjZqHXGxrJlMoG+nxaX/vV2
+        IF/ikJpdgP45T55Z1oSYlFyci76F89fiEXevEA/KW2VneBCH9CZMYHltwyEscWmF0AbqsGPnLnj77IGn
+        2pd9B4aEQZ/zQnaWB4VrSSgQu0BT7w/ZASL38PJB5OmzKKrpRPOXaTSap1BQ0YpDESeh9tuHhMelMh8e
+        jT1DmwKkJA1NVlkz/A/ocOzUGUbcNjiL8ekVDFoW0f5tDm8+W6ELOwrdkUgZIQ/ipBJWmYValm7EphhY
+        KIpru9AqkBPeDc8zAcv8GkxDc8g21rAziYYymS8PSrjqVceAbJGS6aPR2sml6J9YwNDkEho+WZjAFX26
+        zJdHtdCMKupK6eKF63p4++5Fy9cZRRFCXc8EE4hKzJL58iiq/wAVZVy6eDP9GXN+UtGiSE5IzSuFm4cX
+        bhdUynx5ELcqjytPqvOg0HAcDD/OEsqTv+4cgTYgGP5BITI/JTCBYi5EhIRHJawUgw9HION5Jep7f6G2
+        awwphhJotAHCDT3h5uYu5CDDwVcKY4MQIj7JIqhCQiJOsHCJoLDsDwqFu4cnvHb7Qe2rcSrCkjwwOqm4
+        KSIpv5wlMzo5G3eeVrG1y/H3GTl1uFooiKjETAc/Ao1z1mg53AxyBf8SYY0mcLNRQfNcuukqruozGfmm
+        iAaxd/PsezR+2KigHxp2fDW5ii0RP1yMSWJrNDjFB8g+rscVxrWriE3Nx6UbyUgz1jGOiak5G6tEgIyS
+        8r8iBPLd9sERbfz37H+Fi8JCjxZvDgJklJO33d9dug1VYHvfCFbX/9i85aYoIBqVsHnUCmpG6nhqfQJ9
+        V5sGQKNefLmUDfgLdkPBiKSx8WkAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="btnBuscar3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -183,6 +204,9 @@
   </data>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
+  </metadata>
+  <metadata name="dataSet11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>229, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>

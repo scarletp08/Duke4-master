@@ -46,6 +46,7 @@
             this.MainPanel.Controls.Add(this.TxtCodigo);
             this.MainPanel.Location = new System.Drawing.Point(1, 130);
             this.MainPanel.Size = new System.Drawing.Size(765, 102);
+            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             this.MainPanel.Controls.SetChildIndex(this.LblEstado, 0);
             this.MainPanel.Controls.SetChildIndex(this.TxtCodigo, 0);
             this.MainPanel.Controls.SetChildIndex(this.Txtdescripcion, 0);

@@ -551,5 +551,10 @@ namespace Duke4.CXC.Proceso
         {
 
         }
+
+        private void Txtcodigovendedor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

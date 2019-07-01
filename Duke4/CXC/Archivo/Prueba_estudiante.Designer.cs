@@ -78,6 +78,7 @@
             this.MainPanel.Controls.Add(this.lblBase1);
             this.MainPanel.Location = new System.Drawing.Point(1, 136);
             this.MainPanel.Size = new System.Drawing.Size(765, 276);
+            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             this.MainPanel.Controls.SetChildIndex(this.lblBase1, 0);
             this.MainPanel.Controls.SetChildIndex(this.lblBase2, 0);
             this.MainPanel.Controls.SetChildIndex(this.Txtcodigo, 0);

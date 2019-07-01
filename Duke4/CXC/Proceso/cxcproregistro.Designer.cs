@@ -150,9 +150,6 @@
             this.MainPanel.Controls.Add(this.lblBase2);
             this.MainPanel.Controls.Add(this.Txtregistro);
             this.MainPanel.Controls.Add(this.lblBase1);
-
-            this.MainPanel.Size = new System.Drawing.Size(583, 576);
-
             this.MainPanel.Location = new System.Drawing.Point(8, 104);
             this.MainPanel.Size = new System.Drawing.Size(570, 553);
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
@@ -208,7 +205,6 @@
             this.MainPanel.Controls.SetChildIndex(this.button1, 0);
             this.MainPanel.Controls.SetChildIndex(this.Ckbimprimir, 0);
             this.MainPanel.Controls.SetChildIndex(this.LblFunctionName, 0);
-
             // 
             // LblAlerta
             // 
@@ -224,10 +220,8 @@
             // 
             // panel2
             // 
-
             this.panel2.Location = new System.Drawing.Point(1, 685);
             this.panel2.Size = new System.Drawing.Size(588, 10);
-   
             // 
             // FormTitle
             // 
@@ -461,6 +455,7 @@
             this.Txtcodigovendedor.Size = new System.Drawing.Size(100, 23);
             this.Txtcodigovendedor.TabIndex = 5;
             this.Txtcodigovendedor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Txtcodigovendedor.TextChanged += new System.EventHandler(this.Txtcodigovendedor_TextChanged);
             this.Txtcodigovendedor.Validating += new System.ComponentModel.CancelEventHandler(this.Txtcodigovendedor_Validating);
             // 
             // lblBase13
@@ -909,9 +904,7 @@
             // 
             // cxcproregistro
             // 
-
             this.ClientSize = new System.Drawing.Size(590, 705);
- 
             this.Name = "cxcproregistro";
             this.Load += new System.EventHandler(this.cxcproregistro_Load);
             this.MainPanel.ResumeLayout(false);

@@ -134,10 +134,11 @@ namespace Duke4.CXC.Archivo
                 Txtdecimal.Text = ds.Tables[0].Rows[0]["balance"].ToString();
                 msktelefono.Text = ds.Tables[0].Rows[0]["telefono"].ToString();
                 mskCedula1.Text = ds.Tables[0].Rows[0]["cedula"].ToString();
-                Cmbsexo.Text = ds.Tables[0].Rows[0]["sexo"].ToString();
+                Cmbsexo.SelectedValue = ds.Tables[0].Rows[0]["sexo"].ToString();
+                Ckbestado.Text= ds.Tables[0].Rows[0]["nulo"].ToString();
 
 
-     
+
 
 
 
@@ -215,6 +216,7 @@ namespace Duke4.CXC.Archivo
                 else
 
                     Modificar();
+                MessageBox.Show(_OpcionSQL);
                 LblAlerta.Text = string.Empty;
             }
             else
@@ -247,6 +249,11 @@ namespace Duke4.CXC.Archivo
         private void Txtcodigo_KeyUp(object sender, KeyEventArgs e)
         {
             
+        }
+
+        private void MainPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
     

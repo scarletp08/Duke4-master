@@ -56,8 +56,8 @@
             this.Txtcliente = new Duke4.Logistica.TxtBase();
             this.btnBuscar2 = new Duke4.Logistica.BtnBuscar();
             this.btnBuscar3 = new Duke4.Logistica.BtnBuscar();
-            this.txtBase1 = new Duke4.Logistica.TxtBase();
-            this.txtBase2 = new Duke4.Logistica.TxtBase();
+            this.Txtvende = new Duke4.Logistica.TxtBase();
+            this.Txtdescripcion = new Duke4.Logistica.TxtBase();
             this.lblBase16 = new Duke4.Logistica.LblBase();
             this.txtNota1 = new Duke4.Logistica.TxtNota();
             this.Dtpfecha = new Duke4.Logistica.DtpBase();
@@ -69,11 +69,15 @@
             this.lblBase14 = new Duke4.Logistica.LblBase();
             this.lblBase11 = new Duke4.Logistica.LblBase();
             this.Txtitbis = new Duke4.Logistica.TxtBase();
+            this.Btnbuscar = new Duke4.Logistica.BtnBuscar();
+            this.dataSet11 = new Duke4._newDesign.Report.DataSet1();
             this.MainPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             this.SuspendLayout();
             // 
             // MainPanel
             // 
+            this.MainPanel.Controls.Add(this.Btnbuscar);
             this.MainPanel.Controls.Add(this.lblBase11);
             this.MainPanel.Controls.Add(this.Txtitbis);
             this.MainPanel.Controls.Add(this.Msknfc);
@@ -85,8 +89,8 @@
             this.MainPanel.Controls.Add(this.Dtpfecha);
             this.MainPanel.Controls.Add(this.txtNota1);
             this.MainPanel.Controls.Add(this.lblBase16);
-            this.MainPanel.Controls.Add(this.txtBase2);
-            this.MainPanel.Controls.Add(this.txtBase1);
+            this.MainPanel.Controls.Add(this.Txtdescripcion);
+            this.MainPanel.Controls.Add(this.Txtvende);
             this.MainPanel.Controls.Add(this.btnBuscar3);
             this.MainPanel.Controls.Add(this.btnBuscar2);
             this.MainPanel.Controls.Add(this.Txtcliente);
@@ -114,7 +118,8 @@
             this.MainPanel.Controls.Add(this.Txtdireccion);
             this.MainPanel.Controls.Add(this.Txtidcliente);
             this.MainPanel.Controls.Add(this.Txtfactura);
-            this.MainPanel.Size = new System.Drawing.Size(766, 498);
+            this.MainPanel.Size = new System.Drawing.Size(766, 517);
+            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             this.MainPanel.Controls.SetChildIndex(this.Txtfactura, 0);
             this.MainPanel.Controls.SetChildIndex(this.Txtidcliente, 0);
             this.MainPanel.Controls.SetChildIndex(this.Txtdireccion, 0);
@@ -142,8 +147,8 @@
             this.MainPanel.Controls.SetChildIndex(this.Txtcliente, 0);
             this.MainPanel.Controls.SetChildIndex(this.btnBuscar2, 0);
             this.MainPanel.Controls.SetChildIndex(this.btnBuscar3, 0);
-            this.MainPanel.Controls.SetChildIndex(this.txtBase1, 0);
-            this.MainPanel.Controls.SetChildIndex(this.txtBase2, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtvende, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtdescripcion, 0);
             this.MainPanel.Controls.SetChildIndex(this.lblBase16, 0);
             this.MainPanel.Controls.SetChildIndex(this.txtNota1, 0);
             this.MainPanel.Controls.SetChildIndex(this.Dtpfecha, 0);
@@ -156,6 +161,7 @@
             this.MainPanel.Controls.SetChildIndex(this.Msknfc, 0);
             this.MainPanel.Controls.SetChildIndex(this.Txtitbis, 0);
             this.MainPanel.Controls.SetChildIndex(this.lblBase11, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Btnbuscar, 0);
             // 
             // LblAlerta
             // 
@@ -169,8 +175,8 @@
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(0, 643);
-            this.panel2.Size = new System.Drawing.Size(770, 11);
+            this.panel2.Location = new System.Drawing.Point(0, 656);
+            this.panel2.Size = new System.Drawing.Size(770, 10);
             // 
             // FormTitle
             // 
@@ -184,6 +190,8 @@
             this.Txtfactura.Name = "Txtfactura";
             this.Txtfactura.Size = new System.Drawing.Size(100, 23);
             this.Txtfactura.TabIndex = 68;
+            this.Txtfactura.TextChanged += new System.EventHandler(this.Txtfactura_TextChanged);
+            this.Txtfactura.Validating += new System.ComponentModel.CancelEventHandler(this.Txtfactura_Validating);
             // 
             // Txtidcliente
             // 
@@ -191,19 +199,23 @@
             this.Txtidcliente.Name = "Txtidcliente";
             this.Txtidcliente.Size = new System.Drawing.Size(100, 23);
             this.Txtidcliente.TabIndex = 69;
+            this.Txtidcliente.TextChanged += new System.EventHandler(this.Txtidcliente_TextChanged);
+            this.Txtidcliente.Validating += new System.ComponentModel.CancelEventHandler(this.Txtidcliente_Validating);
             // 
             // Txtdireccion
             // 
+            this.Txtdireccion.Enabled = false;
             this.Txtdireccion.Location = new System.Drawing.Point(91, 78);
             this.Txtdireccion.Name = "Txtdireccion";
-            this.Txtdireccion.Size = new System.Drawing.Size(405, 23);
+            this.Txtdireccion.Size = new System.Drawing.Size(672, 23);
             this.Txtdireccion.TabIndex = 70;
             // 
             // Txttelefono
             // 
+            this.Txttelefono.Enabled = false;
             this.Txttelefono.Location = new System.Drawing.Point(91, 116);
             this.Txttelefono.Name = "Txttelefono";
-            this.Txttelefono.Size = new System.Drawing.Size(100, 23);
+            this.Txttelefono.Size = new System.Drawing.Size(175, 23);
             this.Txttelefono.TabIndex = 71;
             // 
             // Txtreferencia
@@ -219,6 +231,7 @@
             this.Txtvendedor.Name = "Txtvendedor";
             this.Txtvendedor.Size = new System.Drawing.Size(100, 23);
             this.Txtvendedor.TabIndex = 73;
+            this.Txtvendedor.Validating += new System.ComponentModel.CancelEventHandler(this.Txtvendedor_Validating);
             // 
             // Txtconcepto
             // 
@@ -226,6 +239,7 @@
             this.Txtconcepto.Name = "Txtconcepto";
             this.Txtconcepto.Size = new System.Drawing.Size(100, 23);
             this.Txtconcepto.TabIndex = 74;
+            this.Txtconcepto.Validating += new System.ComponentModel.CancelEventHandler(this.Txtconcepto_Validating);
             // 
             // Dptvence
             // 
@@ -243,17 +257,21 @@
             this.Txtexcento.Name = "Txtexcento";
             this.Txtexcento.Size = new System.Drawing.Size(100, 23);
             this.Txtexcento.TabIndex = 77;
+            this.Txtexcento.Validating += new System.ComponentModel.CancelEventHandler(this.Txtexcento_Validating);
             // 
             // Txtneto
             // 
-            this.Txtneto.Location = new System.Drawing.Point(79, 378);
+            this.Txtneto.Enabled = false;
+            this.Txtneto.Location = new System.Drawing.Point(79, 385);
             this.Txtneto.Name = "Txtneto";
             this.Txtneto.Size = new System.Drawing.Size(216, 23);
             this.Txtneto.TabIndex = 79;
+            this.Txtneto.TextChanged += new System.EventHandler(this.Txtneto_TextChanged);
             // 
             // Txtbalance
             // 
-            this.Txtbalance.Location = new System.Drawing.Point(272, 116);
+            this.Txtbalance.Enabled = false;
+            this.Txtbalance.Location = new System.Drawing.Point(454, 119);
             this.Txtbalance.Name = "Txtbalance";
             this.Txtbalance.Size = new System.Drawing.Size(309, 23);
             this.Txtbalance.TabIndex = 80;
@@ -362,7 +380,7 @@
             this.lblBase12.AutoSize = true;
             this.lblBase12.Font = new System.Drawing.Font("Verdana", 9.75F);
             this.lblBase12.ForeColor = System.Drawing.Color.Black;
-            this.lblBase12.Location = new System.Drawing.Point(18, 378);
+            this.lblBase12.Location = new System.Drawing.Point(18, 385);
             this.lblBase12.Name = "lblBase12";
             this.lblBase12.Size = new System.Drawing.Size(39, 16);
             this.lblBase12.TabIndex = 94;
@@ -373,7 +391,7 @@
             this.lblBase13.AutoSize = true;
             this.lblBase13.Font = new System.Drawing.Font("Verdana", 9.75F);
             this.lblBase13.ForeColor = System.Drawing.Color.Black;
-            this.lblBase13.Location = new System.Drawing.Point(207, 116);
+            this.lblBase13.Location = new System.Drawing.Point(389, 123);
             this.lblBase13.Name = "lblBase13";
             this.lblBase13.Size = new System.Drawing.Size(59, 16);
             this.lblBase13.TabIndex = 95;
@@ -396,19 +414,21 @@
             this.btnBuscar1.FlatAppearance.BorderSize = 0;
             this.btnBuscar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar1.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar1.Image")));
-            this.btnBuscar1.Location = new System.Drawing.Point(202, 12);
+            this.btnBuscar1.Location = new System.Drawing.Point(197, 39);
             this.btnBuscar1.Name = "btnBuscar1";
             this.btnBuscar1.Size = new System.Drawing.Size(24, 24);
             this.btnBuscar1.TabIndex = 98;
             this.btnBuscar1.TabStop = false;
             this.btnBuscar1.Text = " ";
             this.btnBuscar1.UseVisualStyleBackColor = false;
+            this.btnBuscar1.Click += new System.EventHandler(this.btnBuscar1_Click);
             // 
             // Txtcliente
             // 
-            this.Txtcliente.Location = new System.Drawing.Point(202, 43);
+            this.Txtcliente.Enabled = false;
+            this.Txtcliente.Location = new System.Drawing.Point(259, 43);
             this.Txtcliente.Name = "Txtcliente";
-            this.Txtcliente.Size = new System.Drawing.Size(430, 23);
+            this.Txtcliente.Size = new System.Drawing.Size(504, 23);
             this.Txtcliente.TabIndex = 99;
             // 
             // btnBuscar2
@@ -424,6 +444,7 @@
             this.btnBuscar2.TabStop = false;
             this.btnBuscar2.Text = " ";
             this.btnBuscar2.UseVisualStyleBackColor = false;
+            this.btnBuscar2.Click += new System.EventHandler(this.btnBuscar2_Click);
             // 
             // btnBuscar3
             // 
@@ -438,27 +459,30 @@
             this.btnBuscar3.TabStop = false;
             this.btnBuscar3.Text = " ";
             this.btnBuscar3.UseVisualStyleBackColor = false;
+            this.btnBuscar3.Click += new System.EventHandler(this.btnBuscar3_Click);
             // 
-            // txtBase1
+            // Txtvende
             // 
-            this.txtBase1.Location = new System.Drawing.Point(281, 185);
-            this.txtBase1.Name = "txtBase1";
-            this.txtBase1.Size = new System.Drawing.Size(448, 23);
-            this.txtBase1.TabIndex = 102;
+            this.Txtvende.Enabled = false;
+            this.Txtvende.Location = new System.Drawing.Point(315, 184);
+            this.Txtvende.Name = "Txtvende";
+            this.Txtvende.Size = new System.Drawing.Size(448, 23);
+            this.Txtvende.TabIndex = 102;
             // 
-            // txtBase2
+            // Txtdescripcion
             // 
-            this.txtBase2.Location = new System.Drawing.Point(281, 226);
-            this.txtBase2.Name = "txtBase2";
-            this.txtBase2.Size = new System.Drawing.Size(394, 23);
-            this.txtBase2.TabIndex = 103;
+            this.Txtdescripcion.Enabled = false;
+            this.Txtdescripcion.Location = new System.Drawing.Point(315, 221);
+            this.Txtdescripcion.Name = "Txtdescripcion";
+            this.Txtdescripcion.Size = new System.Drawing.Size(448, 23);
+            this.Txtdescripcion.TabIndex = 103;
             // 
             // lblBase16
             // 
             this.lblBase16.AutoSize = true;
             this.lblBase16.Font = new System.Drawing.Font("Verdana", 9.75F);
             this.lblBase16.ForeColor = System.Drawing.Color.Black;
-            this.lblBase16.Location = new System.Drawing.Point(18, 404);
+            this.lblBase16.Location = new System.Drawing.Point(27, 415);
             this.lblBase16.Name = "lblBase16";
             this.lblBase16.Size = new System.Drawing.Size(39, 16);
             this.lblBase16.TabIndex = 104;
@@ -467,11 +491,11 @@
             // txtNota1
             // 
             this.txtNota1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNota1.Location = new System.Drawing.Point(54, 423);
+            this.txtNota1.Location = new System.Drawing.Point(51, 434);
             this.txtNota1.Multiline = true;
             this.txtNota1.Name = "txtNota1";
             this.txtNota1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtNota1.Size = new System.Drawing.Size(695, 69);
+            this.txtNota1.Size = new System.Drawing.Size(695, 80);
             this.txtNota1.TabIndex = 105;
             // 
             // Dtpfecha
@@ -479,9 +503,9 @@
             this.Dtpfecha.CustomFormat = "dd/MM/yyyy";
             this.Dtpfecha.Font = new System.Drawing.Font("Verdana", 9.75F);
             this.Dtpfecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Dtpfecha.Location = new System.Drawing.Point(563, 3);
+            this.Dtpfecha.Location = new System.Drawing.Point(333, 3);
             this.Dtpfecha.Name = "Dtpfecha";
-            this.Dtpfecha.Size = new System.Drawing.Size(200, 23);
+            this.Dtpfecha.Size = new System.Drawing.Size(163, 23);
             this.Dtpfecha.TabIndex = 106;
             // 
             // lblBase17
@@ -489,7 +513,7 @@
             this.lblBase17.AutoSize = true;
             this.lblBase17.Font = new System.Drawing.Font("Verdana", 9.75F);
             this.lblBase17.ForeColor = System.Drawing.Color.Black;
-            this.lblBase17.Location = new System.Drawing.Point(509, 3);
+            this.lblBase17.Location = new System.Drawing.Point(279, 3);
             this.lblBase17.Name = "lblBase17";
             this.lblBase17.Size = new System.Drawing.Size(48, 16);
             this.lblBase17.TabIndex = 107;
@@ -512,6 +536,11 @@
             this.Txtimporte.Name = "Txtimporte";
             this.Txtimporte.Size = new System.Drawing.Size(207, 23);
             this.Txtimporte.TabIndex = 108;
+            this.Txtimporte.Click += new System.EventHandler(this.Txtimporte_Click);
+            this.Txtimporte.TextChanged += new System.EventHandler(this.Txtimporte_TextChanged);
+            this.Txtimporte.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txtimporte_KeyPress);
+            this.Txtimporte.MouseEnter += new System.EventHandler(this.Txtimporte_MouseEnter);
+            this.Txtimporte.Validating += new System.ComponentModel.CancelEventHandler(this.Txtimporte_Validating);
             // 
             // Cmbmoneda
             // 
@@ -556,17 +585,40 @@
             // 
             // Txtitbis
             // 
+            this.Txtitbis.Enabled = false;
             this.Txtitbis.Location = new System.Drawing.Point(91, 355);
             this.Txtitbis.Name = "Txtitbis";
             this.Txtitbis.Size = new System.Drawing.Size(100, 23);
             this.Txtitbis.TabIndex = 114;
             // 
+            // Btnbuscar
+            // 
+            this.Btnbuscar.BackColor = System.Drawing.Color.AliceBlue;
+            this.Btnbuscar.FlatAppearance.BorderSize = 0;
+            this.Btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btnbuscar.Image = ((System.Drawing.Image)(resources.GetObject("Btnbuscar.Image")));
+            this.Btnbuscar.Location = new System.Drawing.Point(197, 8);
+            this.Btnbuscar.Name = "Btnbuscar";
+            this.Btnbuscar.Size = new System.Drawing.Size(24, 24);
+            this.Btnbuscar.TabIndex = 116;
+            this.Btnbuscar.TabStop = false;
+            this.Btnbuscar.Text = " ";
+            this.Btnbuscar.UseVisualStyleBackColor = false;
+            this.Btnbuscar.Click += new System.EventHandler(this.btnBuscar4_Click);
+            // 
+            // dataSet11
+            // 
+            this.dataSet11.DataSetName = "DataSet1";
+            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Dateprocesoprueba
             // 
-            this.ClientSize = new System.Drawing.Size(812, 607);
+            this.ClientSize = new System.Drawing.Size(812, 670);
             this.Name = "Dateprocesoprueba";
+            this.Load += new System.EventHandler(this.Dateprocesoprueba_Load);
             this.MainPanel.ResumeLayout(false);
             this.MainPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -601,8 +653,8 @@
         private Logistica.LblBase lblBase15;
         private Logistica.TxtNota txtNota1;
         private Logistica.LblBase lblBase16;
-        private Logistica.TxtBase txtBase2;
-        private Logistica.TxtBase txtBase1;
+        private Logistica.TxtBase Txtdescripcion;
+        private Logistica.TxtBase Txtvende;
         private Logistica.BtnBuscar btnBuscar3;
         private Logistica.BtnBuscar btnBuscar2;
         private Logistica.LblBase lblBase11;
@@ -614,5 +666,7 @@
         private Logistica.TxtBase Txtimporte;
         private Logistica.LblBase lblBase17;
         private Logistica.DtpBase Dtpfecha;
+        private Logistica.BtnBuscar Btnbuscar;
+        private _newDesign.Report.DataSet1 dataSet11;
     }
 }

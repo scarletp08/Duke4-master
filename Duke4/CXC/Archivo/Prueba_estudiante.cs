@@ -22,6 +22,7 @@ namespace Duke4.CXC.Archivo
             array = new Control[] { Txtdescripcion,msktelefono,Cmbsexo };
             //Cmbsexo.SelectedIndex = 0;
             //Cmbsexo.Text = "Seleccione";
+            
         }
 
         protected override void Crear()

@@ -45,9 +45,6 @@ namespace Duke4.CXC.Proceso
                 DataSet ds = Txtidcliente._Dataset;
 
 
-
-
-
                 Txtcliente.Text = ds.Tables[0].Rows[0]["nombre"].ToString();
                 Txtdireccion.Text = ds.Tables[0].Rows[0]["direccion"].ToString();
                 Txttelefono.Text = ds.Tables[0].Rows[0]["telefono"].ToString();
@@ -89,12 +86,15 @@ namespace Duke4.CXC.Proceso
 
         private void btnBuscar4_Click(object sender, EventArgs e)
         {
+           
             MainFormConsultaGeneral Consulta_factura = new MainFormConsultaGeneral("select idfactura as codigo, referencia as descripcion from prudbffactura", "referencia", "factura");
+
             if (Consulta_factura.ShowDialog(this) == DialogResult.OK)
+
             {
 
                 Txtfactura.Text = Consulta_factura.MainGrid.SelectedRows[0].Cells[0].Value.ToString();
-
+                Completar_factura();
             }
         }
 
@@ -196,10 +196,6 @@ namespace Duke4.CXC.Proceso
 
 
                 Txtvende.Text = ds.Tables[0].Rows[0]["nombre"].ToString();
-
-
-
-
 
 
 

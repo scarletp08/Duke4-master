@@ -18,7 +18,7 @@ namespace Duke4.CXC.Proceso
         {
             InitializeComponent();
         }
-      
+
         private void Txtncf_TextChanged(object sender, EventArgs e)
         {
 
@@ -43,20 +43,20 @@ namespace Duke4.CXC.Proceso
             if (Txtidcliente.Fun_SQL_Buscar_CodigoRegistro("cxcdbfcliente", "idcliente"))
             {
                 DataSet ds = Txtidcliente._Dataset;
-               
-               
 
 
 
-                    Txtcliente.Text = ds.Tables[0].Rows[0]["nombre"].ToString();
-                    Txtdireccion.Text = ds.Tables[0].Rows[0]["direccion"].ToString();
-                    Txttelefono.Text = ds.Tables[0].Rows[0]["telefono"].ToString();
-                    
-                    Txtbalance.Text = FuncionesSQL.Fun_SQL_Buscar_Balance_Cliente(Txtidcliente.Text);
-                    
-                    
 
-             
+
+                Txtcliente.Text = ds.Tables[0].Rows[0]["nombre"].ToString();
+                Txtdireccion.Text = ds.Tables[0].Rows[0]["direccion"].ToString();
+                Txttelefono.Text = ds.Tables[0].Rows[0]["telefono"].ToString();
+
+                Txtbalance.Text = FuncionesSQL.Fun_SQL_Buscar_Balance_Cliente(Txtidcliente.Text);
+
+
+
+
             }
             else
             {
@@ -83,6 +83,8 @@ namespace Duke4.CXC.Proceso
             Txtfactura.Enabled = true;
             Btnbuscar.Visible = true;
             Txtfactura.Focus();
+
+
         }
 
         private void btnBuscar4_Click(object sender, EventArgs e)
@@ -92,7 +94,7 @@ namespace Duke4.CXC.Proceso
             {
 
                 Txtfactura.Text = Consulta_factura.MainGrid.SelectedRows[0].Cells[0].Value.ToString();
-                
+
             }
         }
 
@@ -116,7 +118,7 @@ namespace Duke4.CXC.Proceso
                 Dtpfecha.Value = Convert.ToDateTime(ds.Tables[0].Rows[0]["fecha"].ToString());
                 Dptvence.Value = Convert.ToDateTime(ds.Tables[0].Rows[0]["fec"].ToString());
                 Msknfc.Text = ds.Tables[0].Rows[0]["nfc"].ToString();
-                Cmbmoneda.SelectedValue= ds.Tables[0].Rows[0]["moneda"].ToString();
+                Cmbmoneda.SelectedValue = ds.Tables[0].Rows[0]["moneda"].ToString();
 
 
             }
@@ -128,7 +130,7 @@ namespace Duke4.CXC.Proceso
         }
         protected void Fun_Buscar_factura()
         {
-            if (Txtidcliente.Fun_SQL_Buscar_CodigoRegistro("cxcdbfregistro", "idfactura"))
+            if (Txtidcliente.Fun_SQL_Buscar_CodigoRegistro("prudbffactura", "idfactura"))
             {
                 DataSet ds = Txtidcliente._Dataset;
                 if (ds.Tables[0].Rows[0]["idfactura"].ToString() == "1")
@@ -141,10 +143,10 @@ namespace Duke4.CXC.Proceso
                 {
 
 
-                    
+
                     Txtcliente.Text = ds.Tables[0].Rows[0]["idcliente"].ToString();
                     Fun_Buscar_Cliente();
-                   
+
                     //string cmd = string.Format("SELECT      dbo.cxcdbfcliente.idcliente, dbo.cxcdbfcliente.nombre, dbo.cxcdbfcliente.direccion, dbo.cxcdbfcliente.telefono, dbo.cxcdbfcliente.referencia, dbo.nomdbfempleado.idempleado, dbo.nomdbfempleado.nombre AS nombre_vendedor, dbo.cxcdbfconcepto.idconcepto, dbo.cxcdbfconcepto.descripcion FROM         dbo.cxcdbfregistro INNER JOIn dbo.cxcdbfcliente ON dbo.cxcdbfregistro.idcliente = dbo.cxcdbfcliente.idcliente CROSS JOIN dbo.nomdbfempleado CROSS JOIN dbo.cxcdbfconcepto where dbo.cxcdbfconcepto.idconcepto='" + Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(Txtidcliente.Text.Trim()) + "' and cxcdbfcliente.nulo=0");
                     //DataSet ds2 = FuncionesSQL.Fun_Sql_Ejecutar(cmd);
                     //if (ds2.Tables[0].Rows.Count > 0)
@@ -194,9 +196,9 @@ namespace Duke4.CXC.Proceso
 
 
                 Txtvende.Text = ds.Tables[0].Rows[0]["nombre"].ToString();
-               
 
-             
+
+
 
 
 
@@ -205,13 +207,13 @@ namespace Duke4.CXC.Proceso
             else
             {
 
-            
+
 
             }
         }
-       protected void Fun_Buscar_facturat ()
+        protected void Fun_Buscar_facturat()
         {
-            if(Txtfactura.Fun_SQL_Buscar_CodigoRegistro("prudbffactura","idfactura"))
+            if (Txtfactura.Fun_SQL_Buscar_CodigoRegistro("prudbffactura", "idfactura"))
             {
                 DataSet ds = Txtconcepto._Dataset;
                 Txtdescripcion.Text = ds.Tables[0].Rows[0]["descripcion"].ToString();
@@ -220,12 +222,12 @@ namespace Duke4.CXC.Proceso
             {
 
             }
-        
-    
+
+
         }
         protected void FunBuscar_concepto()
         {
-            if(Txtconcepto.Fun_SQL_Buscar_CodigoRegistro("cxcdbfconcepto", "idconcepto"))
+            if (Txtconcepto.Fun_SQL_Buscar_CodigoRegistro("cxcdbfconcepto", "idconcepto"))
             {
                 DataSet ds = Txtconcepto._Dataset;
                 Txtdescripcion.Text = ds.Tables[0].Rows[0]["descripcion"].ToString();
@@ -259,6 +261,7 @@ namespace Duke4.CXC.Proceso
 
         private void Dateprocesoprueba_Load(object sender, EventArgs e)
         {
+            Fun_Set_Nombre_Formulario("Proceso estudiante ", this);
             FuncionesSQL.Fun_SQL_Completar_ComboboxTexto(Cmbmoneda, "select idmoneda, abreviatura from gendbfmoneda");
             Crear();
 
@@ -267,17 +270,18 @@ namespace Duke4.CXC.Proceso
         protected override void Salvar()
         {
             base.Salvar();
+
+
             Control[] array = { Txtidcliente, Txtvendedor, Txtconcepto };
 
             if (!Funciones_Duke4.Funciones.Fun_Validar_Campos_Vacios(array))
             {
-                MessageBox.Show(_OpcionSQL);
-                string cmd = string.Format("exec Spr_pru_factura '{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}','{15}','{16}','{17}','{18}','{19}'",
+
+                string cmd = string.Format("exec Spr_pru_factura '{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}','{15}','{16}'",
                     _OpcionSQL, Properties.Settings.Default.idsesion, 1,
                     Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(Txtfactura.Text),
                     Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(Txtidcliente.Text),
-                    Txtdireccion.Text,
-                    Txttelefono.Text,
+
                     Txtreferencia.Text,
                     Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(Txtvendedor.Text),
                     Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(Txtconcepto.Text),
@@ -288,11 +292,10 @@ namespace Duke4.CXC.Proceso
                     txtNota1.Text,
                     Funciones_Duke4.Funciones.Fun_Convertir_Fecha_FormatoyyyMMdd(Dptvence),
 
-                    Funciones_Duke4.Funciones.Fun_Convierte_String_aDecimal(Txtbalance.Text),
                     Msknfc.Text,
                     Cmbmoneda.SelectedValue,
                     Funciones_Duke4.Funciones.Fun_Convertir_Fecha_FormatoyyyMMdd(Dtpfecha));
-                    FuncionesSQL.Fun_Sql_Ejecutar(cmd);
+                FuncionesSQL.Fun_Sql_Ejecutar(cmd);
 
                 Funciones_Duke4.Funciones.Fun_Limpiar_Formulario(MainPanel);
 
@@ -301,7 +304,7 @@ namespace Duke4.CXC.Proceso
 
                     Crear();
 
-                       else
+                else
 
                     Modificar();
                 LblAlerta.Text = string.Empty;
@@ -331,6 +334,66 @@ namespace Duke4.CXC.Proceso
         {
             Completar_factura();
         }
+
+        private void Txtimporte_TextChanged(object sender, EventArgs e)
+        {
+
+
+
+
+        }
+        protected void Fun_Calcular_Neto()
+        {
+            Double itbis = 0.18;
+            Txtitbis.Text = Convert.ToString(Funciones_Duke4.Funciones.Fun_Convierte_String_aDecimal(Txtimporte.Text) * itbis);
+
+            Txtneto.Text = Convert.ToString(Funciones_Duke4.Funciones.Fun_Convierte_String_aDecimal(Txtimporte.Text) + (Funciones_Duke4.Funciones.Fun_Convierte_String_aDecimal(Txtitbis.Text))+ (Funciones_Duke4.Funciones.Fun_Convierte_String_aDecimal( Txtexcento.Text)));
+        }
+        private void Txtneto_TextChanged(object sender, EventArgs e)
+        {
+            }
+
+        private void Txtimporte_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+     if (Char.IsControl(e.KeyChar)) //permitir teclas de control como retroceso 
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                //el resto de teclas pulsadas se desactivan 
+                e.Handled = true;
+            }
+
+        }
+
+        private void Txtimporte_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void Txtimporte_MouseEnter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Txtimporte_Validating(object sender, CancelEventArgs e)
+        {
+            Fun_Calcular_Neto();
+        }
+
+        private void Txtexcento_Validating(object sender, CancelEventArgs e)
+        {
+            Fun_Calcular_Neto();
+        }
     }
+    
+    
     
 }

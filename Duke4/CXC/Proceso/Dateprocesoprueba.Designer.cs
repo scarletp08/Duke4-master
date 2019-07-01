@@ -257,13 +257,16 @@
             this.Txtexcento.Name = "Txtexcento";
             this.Txtexcento.Size = new System.Drawing.Size(100, 23);
             this.Txtexcento.TabIndex = 77;
+            this.Txtexcento.Validating += new System.ComponentModel.CancelEventHandler(this.Txtexcento_Validating);
             // 
             // Txtneto
             // 
+            this.Txtneto.Enabled = false;
             this.Txtneto.Location = new System.Drawing.Point(79, 385);
             this.Txtneto.Name = "Txtneto";
             this.Txtneto.Size = new System.Drawing.Size(216, 23);
             this.Txtneto.TabIndex = 79;
+            this.Txtneto.TextChanged += new System.EventHandler(this.Txtneto_TextChanged);
             // 
             // Txtbalance
             // 
@@ -533,6 +536,11 @@
             this.Txtimporte.Name = "Txtimporte";
             this.Txtimporte.Size = new System.Drawing.Size(207, 23);
             this.Txtimporte.TabIndex = 108;
+            this.Txtimporte.Click += new System.EventHandler(this.Txtimporte_Click);
+            this.Txtimporte.TextChanged += new System.EventHandler(this.Txtimporte_TextChanged);
+            this.Txtimporte.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txtimporte_KeyPress);
+            this.Txtimporte.MouseEnter += new System.EventHandler(this.Txtimporte_MouseEnter);
+            this.Txtimporte.Validating += new System.ComponentModel.CancelEventHandler(this.Txtimporte_Validating);
             // 
             // Cmbmoneda
             // 
@@ -577,6 +585,7 @@
             // 
             // Txtitbis
             // 
+            this.Txtitbis.Enabled = false;
             this.Txtitbis.Location = new System.Drawing.Point(91, 355);
             this.Txtitbis.Name = "Txtitbis";
             this.Txtitbis.Size = new System.Drawing.Size(100, 23);

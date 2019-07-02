@@ -128,6 +128,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSCXC.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSetPrueba.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPrueba.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSet_General\DSCXC.cs">
       <DependentUpon>DSCXC.xsd</DependentUpon>
     </Compile>
@@ -147,6 +152,16 @@
     <Compile Include="controlNCF.Designer.cs">
       <DependentUpon>controlNCF.cs</DependentUpon>
     </Compile>
+    <Compile Include="duke2019DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>duke2019DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="duke2019DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>duke2019DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,11 +177,47 @@
     <Compile Include="myListBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="prueba.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prueba.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reportePrueba.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reportePrueba.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTEPRUEBA1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REPORTEPRUEBA1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reporte_General\CXC\cxcrepchequesfuturos001.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reporte_General\CXC\cxcrepchequesfuturos001.Designer.cs">
       <DependentUpon>cxcrepchequesfuturos001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_General\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_General\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpruebafactura.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpruebafactura.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sps.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sps.xsd</DependentUpon>
     </Compile>
     <Compile Include="_newDesign\_ConsultaGeneral.cs">
       <SubType>Form</SubType>
@@ -788,6 +839,10 @@
       <DependentUpon>cxcrepchequesfuturos001.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reporte_General\CXC\cxcrepcobros007.rdlc" />
+    <EmbeddedResource Include="Reporte_General\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_General\Rpruebafactura.rdlc" />
     <EmbeddedResource Include="_newDesign\_ConsultaGeneral.resx">
       <DependentUpon>_ConsultaGeneral.cs</DependentUpon>
     </EmbeddedResource>
@@ -1129,6 +1184,17 @@
     <None Include="CXP\DataSet_General\DSCXC.xss">
       <DependentUpon>DSCXC.xsd</DependentUpon>
     </None>
+    <None Include="DataSetPrueba.xsc">
+      <DependentUpon>DataSetPrueba.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPrueba.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPrueba.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetPrueba.xss">
+      <DependentUpon>DataSetPrueba.xsd</DependentUpon>
+    </None>
     <None Include="DataSet_General\DSCXC.xsc">
       <DependentUpon>DSCXC.xsd</DependentUpon>
     </None>
@@ -1151,6 +1217,28 @@
     <None Include="DataSet_General\DSGEN.xss">
       <DependentUpon>DSGEN.xsd</DependentUpon>
     </None>
+    <None Include="duke2019DataSet.xsc">
+      <DependentUpon>duke2019DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="duke2019DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>duke2019DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="duke2019DataSet.xss">
+      <DependentUpon>duke2019DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="duke2019DataSet1.xsc">
+      <DependentUpon>duke2019DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="duke2019DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>duke2019DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="duke2019DataSet1.xss">
+      <DependentUpon>duke2019DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -1161,6 +1249,72 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="prueba.xsc">
+      <DependentUpon>prueba.xsd</DependentUpon>
+    </None>
+    <None Include="prueba.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prueba.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prueba.xss">
+      <DependentUpon>prueba.xsd</DependentUpon>
+    </None>
+    <None Include="reportePrueba.xsc">
+      <DependentUpon>reportePrueba.xsd</DependentUpon>
+    </None>
+    <None Include="reportePrueba.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>reportePrueba.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="reportePrueba.xss">
+      <DependentUpon>reportePrueba.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTEPRUEBA1.xsc">
+      <DependentUpon>REPORTEPRUEBA1.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTEPRUEBA1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>REPORTEPRUEBA1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="REPORTEPRUEBA1.xss">
+      <DependentUpon>REPORTEPRUEBA1.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte_General\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte_General\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporte_General\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="rpruebafactura.xsc">
+      <DependentUpon>rpruebafactura.xsd</DependentUpon>
+    </None>
+    <None Include="rpruebafactura.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rpruebafactura.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="rpruebafactura.xss">
+      <DependentUpon>rpruebafactura.xsd</DependentUpon>
+    </None>
+    <None Include="sps.xsc">
+      <DependentUpon>sps.xsd</DependentUpon>
+    </None>
+    <None Include="sps.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sps.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sps.xss">
+      <DependentUpon>sps.xsd</DependentUpon>
+    </None>
     <None Include="_newDesign\Report\DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>

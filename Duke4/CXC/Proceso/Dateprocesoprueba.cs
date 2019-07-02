@@ -115,8 +115,8 @@ namespace Duke4.CXC.Proceso
                 Txtexcento.Text = ds.Tables[0].Rows[0]["excento"].ToString();
                 Txtitbis.Text = ds.Tables[0].Rows[0]["itbis"].ToString();
                 Txtneto.Text = ds.Tables[0].Rows[0]["neto"].ToString();
-                Dtpfecha.Value = Convert.ToDateTime(ds.Tables[0].Rows[0]["fecha"].ToString());
-                Dptvence.Value = Convert.ToDateTime(ds.Tables[0].Rows[0]["fec"].ToString());
+                Dtpfecha.Value = Convert.ToDateTime(ds.Tables[0].Rows[0]["fec"].ToString());
+                Dptvence.Value = Convert.ToDateTime(ds.Tables[0].Rows[0]["fecha"].ToString());
                 Msknfc.Text = ds.Tables[0].Rows[0]["nfc"].ToString();
                 Cmbmoneda.SelectedValue = ds.Tables[0].Rows[0]["moneda"].ToString();
 
@@ -387,6 +387,13 @@ namespace Duke4.CXC.Proceso
         private void Txtexcento_Validating(object sender, CancelEventArgs e)
         {
             Fun_Calcular_Neto();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Reporte_General.Form1 f = new Reporte_General.Form1();
+            f.idfactura = Convert.ToInt32(Txtfactura.Text);
+            f.Show();
         }
     }
     

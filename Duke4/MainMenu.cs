@@ -444,5 +444,12 @@ namespace Duke4
         {
             CXC.Proceso.Dateprocesoprueba formulario = (CXC.Proceso.Dateprocesoprueba)AbrirVentana(typeof(CXC.Proceso.Dateprocesoprueba));
         }
+
+        private void pruebaReporteFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reporte_General.Form1 formulario = (Reporte_General.Form1)AbrirVentana(typeof(Reporte_General.Form1));
+
+
+        }
     }
 }

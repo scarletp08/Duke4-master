@@ -71,6 +71,7 @@
             this.Txtitbis = new Duke4.Logistica.TxtBase();
             this.Btnbuscar = new Duke4.Logistica.BtnBuscar();
             this.dataSet11 = new Duke4._newDesign.Report.DataSet1();
+            this.button1 = new System.Windows.Forms.Button();
             this.MainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             this.SuspendLayout();
@@ -118,7 +119,7 @@
             this.MainPanel.Controls.Add(this.Txtdireccion);
             this.MainPanel.Controls.Add(this.Txtidcliente);
             this.MainPanel.Controls.Add(this.Txtfactura);
-            this.MainPanel.Size = new System.Drawing.Size(766, 517);
+            this.MainPanel.Size = new System.Drawing.Size(769, 553);
             this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             this.MainPanel.Controls.SetChildIndex(this.Txtfactura, 0);
             this.MainPanel.Controls.SetChildIndex(this.Txtidcliente, 0);
@@ -155,13 +156,13 @@
             this.MainPanel.Controls.SetChildIndex(this.lblBase17, 0);
             this.MainPanel.Controls.SetChildIndex(this.Txtimporte, 0);
             this.MainPanel.Controls.SetChildIndex(this.lblBase8, 0);
-            this.MainPanel.Controls.SetChildIndex(this.LblFunctionName, 0);
             this.MainPanel.Controls.SetChildIndex(this.Cmbmoneda, 0);
             this.MainPanel.Controls.SetChildIndex(this.lblBase14, 0);
             this.MainPanel.Controls.SetChildIndex(this.Msknfc, 0);
             this.MainPanel.Controls.SetChildIndex(this.Txtitbis, 0);
             this.MainPanel.Controls.SetChildIndex(this.lblBase11, 0);
             this.MainPanel.Controls.SetChildIndex(this.Btnbuscar, 0);
+            this.MainPanel.Controls.SetChildIndex(this.LblFunctionName, 0);
             // 
             // LblAlerta
             // 
@@ -611,11 +612,26 @@
             this.dataSet11.DataSetName = "DataSet1";
             this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(570, 62);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 117;
+            this.button1.Text = "Imprimir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Dateprocesoprueba
             // 
             this.ClientSize = new System.Drawing.Size(812, 670);
+            this.Controls.Add(this.button1);
             this.Name = "Dateprocesoprueba";
             this.Load += new System.EventHandler(this.Dateprocesoprueba_Load);
+            this.Controls.SetChildIndex(this.MainPanel, 0);
+            this.Controls.SetChildIndex(this.LblAlerta, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.panel2, 0);
             this.MainPanel.ResumeLayout(false);
             this.MainPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
@@ -668,5 +684,6 @@
         private Logistica.DtpBase Dtpfecha;
         private Logistica.BtnBuscar Btnbuscar;
         private _newDesign.Report.DataSet1 dataSet11;
+        private System.Windows.Forms.Button button1;
     }
 }

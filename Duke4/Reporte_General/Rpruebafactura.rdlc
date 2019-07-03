@@ -9,29 +9,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>                                                                                                                                          Registro.: L025520</Value>
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>                                                                                                                                          Ref.....:   </Value>
-                <Style />
-              </TextRun>
-              <TextRun>
-                <Value>=Fields!referencia.Value</Value>
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>                                                                                                                                          FechaVence ....: </Value>
+                <Value>                                                                                                                                         FechaVence . </Value>
                 <Style />
               </TextRun>
               <TextRun>
@@ -44,7 +22,58 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value xml:space="preserve">                </Value>
+                <Value>=Parameters!Nombreempresa.Value</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!Direccionempresa.Value</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>                                                                         Registro.: L025520</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!Telefonoempresa.Value</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>                                                                                                                                       Ref.....:   </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!referencia.Value</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!RNCempresa.Value</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">                                                                                                                    </Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -54,6 +83,17 @@
             <TextRuns>
               <TextRun>
                 <Value />
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value xml:space="preserve">                                           </Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -62,11 +102,49 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value xml:space="preserve">                                                                  </Value>
+                <Value xml:space="preserve">                                      </Value>
                 <Style />
               </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
               <TextRun>
-                <Value>&lt;&lt;&gt;&gt;REGISTRO FRACTURA&lt;&lt;&gt;&gt;                                  </Value>
+                <Value />
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>                                                                &lt;&lt;&gt;&gt;REGISTRO FRACTURA&lt;&lt;&gt;&gt;                                  </Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                 </Style>
@@ -111,7 +189,7 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Value>                                                                                          NFC:</Value>
+                <Value>                                                                                                                  NFC:</Value>
                 <Style>
                   <FontFamily>Times New Roman</FontFamily>
                 </Style>
@@ -287,7 +365,13 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Neto y datos del vendedor</Value>
+                <Value>Neto y datos del vendedor                                                                                                                                             </Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!copia.Value</Value>
                 <Style>
                   <FontFamily>Times New Roman</FontFamily>
                 </Style>
@@ -395,6 +479,12 @@
               </TextRun>
               <TextRun>
                 <Value>=Fields!NombreVendedor.Value</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">  </Value>
                 <Style>
                   <FontFamily>Times New Roman</FontFamily>
                 </Style>
@@ -533,6 +623,44 @@
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="copia">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Nombreempresa">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Direccionempresa">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Telefonoempresa">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RNCempresa">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Emailempresa">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>7896c7de-d29d-4202-a4cc-55028aeb98b4</rd:ReportID>
 </Report>

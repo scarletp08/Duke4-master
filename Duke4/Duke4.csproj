@@ -203,6 +203,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Reporte_General\DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reporte_General\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1292,6 +1297,17 @@
     </None>
     <None Include="Reporte_General\DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte_General\DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte_General\DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporte_General\DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
     </None>
     <None Include="rpruebafactura.xsc">
       <DependentUpon>rpruebafactura.xsd</DependentUpon>

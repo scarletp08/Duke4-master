@@ -69,7 +69,7 @@ namespace Duke4.CXC.Proceso
             base.Crear();
             Txtfactura.Enabled = false;
             Btnbuscar.Visible = false;
-            Txtfactura.Text = Logistica.FuncionesSQL.Fun_SQL_Buscar_UltimoCod("idfactura", "prudbffactura");
+            Txtfactura.Text = FuncionesSQL.Fun_SQL_Buscar_UltimoNumReg("REGISTRO CXC");
             Txtdescripcion.Focus();
 
 
@@ -100,32 +100,39 @@ namespace Duke4.CXC.Proceso
 
         private void Completar_factura()
         {
-            if (Txtfactura.Fun_SQL_Buscar_CodigoRegistro("prudbffactura", "idfactura"))
+            if (_OpcionSQL == "Modificar")
             {
-                DataSet ds = Txtfactura._Dataset;
-                Txtidcliente.Text = ds.Tables[0].Rows[0]["idcliente"].ToString();
-                Fun_Buscar_Cliente();
-                Txtvendedor.Text = ds.Tables[0].Rows[0]["idvendedor"].ToString();
-                Fun_Buscar_vendedor();
-                Txtconcepto.Text = ds.Tables[0].Rows[0]["idconcepto"].ToString();
-                FunBuscar_concepto();
-                Txtreferencia.Text = ds.Tables[0].Rows[0]["referencia"].ToString();
-                txtNota1.Text = ds.Tables[0].Rows[0]["nota"].ToString();
-                Txtimporte.Text = ds.Tables[0].Rows[0]["importe"].ToString();
-                Txtexcento.Text = ds.Tables[0].Rows[0]["excento"].ToString();
-                Txtitbis.Text = ds.Tables[0].Rows[0]["itbis"].ToString();
-                Txtneto.Text = ds.Tables[0].Rows[0]["neto"].ToString();
-                Dtpfecha.Value = Convert.ToDateTime(ds.Tables[0].Rows[0]["fec"].ToString());
-                Dptvence.Value = Convert.ToDateTime(ds.Tables[0].Rows[0]["fecha"].ToString());
-                Msknfc.Text = ds.Tables[0].Rows[0]["nfc"].ToString();
-                Cmbmoneda.SelectedValue = ds.Tables[0].Rows[0]["moneda"].ToString();
+
+                string secuencia = Funciones.Fun_Eliminar_Letras_DeString(Txtfactura.Text);
+
+                if (Txtfactura.Fun_SQL_Buscar_SecuenciaRegistro("SELECT * from prudbffactura where REPLACE(secuencia,SUBSTRING(secuencia,PATINDEX('%[^0-9]%', secuencia),1),'')=" + Funciones.Fun_Convierte_String_aEntrero(secuencia)))
+                {
+                    DataSet ds = Txtfactura._Dataset;
+                    Txtfactura.Text = ds.Tables[0].Rows[0]["secuencia"].ToString();
+                    Txtidcliente.Text = ds.Tables[0].Rows[0]["idcliente"].ToString();
+                    Fun_Buscar_Cliente();
+                    Txtvendedor.Text = ds.Tables[0].Rows[0]["idvendedor"].ToString();
+                    Fun_Buscar_vendedor();
+                    Txtconcepto.Text = ds.Tables[0].Rows[0]["idconcepto"].ToString();
+                    FunBuscar_concepto();
+                    Txtreferencia.Text = ds.Tables[0].Rows[0]["referencia"].ToString();
+                    txtNota1.Text = ds.Tables[0].Rows[0]["nota"].ToString();
+                    Txtimporte.Text = ds.Tables[0].Rows[0]["importe"].ToString();
+                    Txtexcento.Text = ds.Tables[0].Rows[0]["excento"].ToString();
+                    Txtitbis.Text = ds.Tables[0].Rows[0]["itbis"].ToString();
+                    Txtneto.Text = ds.Tables[0].Rows[0]["neto"].ToString();
+                    Dtpfecha.Value = Convert.ToDateTime(ds.Tables[0].Rows[0]["fec"].ToString());
+                    Dptvence.Value = Convert.ToDateTime(ds.Tables[0].Rows[0]["fecha"].ToString());
+                    Msknfc.Text = ds.Tables[0].Rows[0]["nfc"].ToString();
+                    Cmbmoneda.SelectedValue = ds.Tables[0].Rows[0]["moneda"].ToString();
 
 
-            }
-            else
-            {
-                Funciones_Duke4.Funciones.Fun_Limpiar_Formulario(MainPanel);
+                }
+                else
+                {
+                    Funciones_Duke4.Funciones.Fun_Limpiar_Formulario(MainPanel);
 
+                }
             }
         }
         protected void Fun_Buscar_factura()
@@ -272,10 +279,10 @@ namespace Duke4.CXC.Proceso
 
             if (!Funciones_Duke4.Funciones.Fun_Validar_Campos_Vacios(array))
             {
-
+                int idfactura=0;
                 string cmd = string.Format("exec Spr_pru_factura '{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}','{15}','{16}'",
                     _OpcionSQL, Properties.Settings.Default.idsesion, 1,
-                    Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(Txtfactura.Text),
+                    Txtfactura.Text,
                     Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(Txtidcliente.Text),
 
                     Txtreferencia.Text,
@@ -291,7 +298,18 @@ namespace Duke4.CXC.Proceso
                     Msknfc.Text,
                     Cmbmoneda.SelectedValue,
                     Funciones_Duke4.Funciones.Fun_Convertir_Fecha_FormatoyyyMMdd(Dtpfecha));
-                FuncionesSQL.Fun_Sql_Ejecutar(cmd);
+                DataSet ds= FuncionesSQL.Fun_Sql_Ejecutar(cmd);
+
+                if (_OpcionSQL == "Modificar")
+                    idfactura =Funciones.Fun_Convierte_String_aEntrero( ds.Tables[0].Rows[0][0].ToString());
+                else
+                    idfactura = Funciones.Fun_Convierte_String_aEntrero( ds.Tables[1].Rows[0][0].ToString());
+
+                var Reporte = new Reporte_General.Form1();
+                Reporte.idfactura = idfactura;
+                Reporte.Show();
+                Reporte.Owner = this;
+
 
                 Funciones_Duke4.Funciones.Fun_Limpiar_Formulario(MainPanel);
 
@@ -392,7 +410,7 @@ namespace Duke4.CXC.Proceso
         private void button1_Click(object sender, EventArgs e)
         {
             Reporte_General.Form1 f = new Reporte_General.Form1();
-            f.idfactura = Convert.ToInt32(Txtfactura.Text);
+            //f.secuencia = Convert.ToInt32(Txtfactura.Text);
             f.Show();
         }
     }

@@ -451,5 +451,15 @@ namespace Duke4
 
 
         }
+
+        private void prueba2EstudianteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CXC.Proceso.Datos_factura2 formulario = (CXC.Proceso.Datos_factura2)AbrirVentana(typeof(CXC.Proceso.Datos_factura2));
+        }
+
+        private void pruebaEstudianteToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

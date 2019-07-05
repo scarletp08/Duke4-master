@@ -12,6 +12,21 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -117,11 +132,54 @@
     <Compile Include="CXC\Proceso\Dateprocesoprueba.Designer.cs">
       <DependentUpon>Dateprocesoprueba.cs</DependentUpon>
     </Compile>
+    <Compile Include="CXC\Proceso\Datos_factura2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Proceso\Datos_factura2.Designer.cs">
+      <DependentUpon>Datos_factura2.cs</DependentUpon>
+    </Compile>
     <Compile Include="CXC\Reporte\cxcrepacuerdodepagos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CXC\Reporte\cxcrepacuerdodepagos.Designer.cs">
       <DependentUpon>cxcrepacuerdodepagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\Dsreporte2.cs">
+      <DependentUpon>Dsreporte2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\Dsreporte2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dsreporte2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\Dtreportesfac2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dtreportesfac2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\Fmreporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Reporte\Fmreporte.Designer.cs">
+      <DependentUpon>Fmreporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\Fmreportefact2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Reporte\Fmreportefact2.Designer.cs">
+      <DependentUpon>Fmreportefact2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\Formfactura2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Reporte\Formfactura2.Designer.cs">
+      <DependentUpon>Formfactura2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\Forreporte22.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Reporte\Forreporte22.Designer.cs">
+      <DependentUpon>Forreporte22.cs</DependentUpon>
     </Compile>
     <Compile Include="CXP\DataSet_General\DSCXC.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -161,6 +219,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>duke2019DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="duke2019DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>duke2019DataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
@@ -826,6 +889,23 @@
     <EmbeddedResource Include="CXC\Proceso\Dateprocesoprueba.resx">
       <DependentUpon>Dateprocesoprueba.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Proceso\Datos_factura2.resx">
+      <DependentUpon>Datos_factura2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\Fmreporte.resx">
+      <DependentUpon>Fmreporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\Fmreportefact2.resx">
+      <DependentUpon>Fmreportefact2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\Formfactura2.resx">
+      <DependentUpon>Formfactura2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\Forreporte22.resx">
+      <DependentUpon>Forreporte22.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Reporte\Report2.rdlc" />
+    <EmbeddedResource Include="CXC\Reporte\Reporteprueba.rdlc" />
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
@@ -1178,6 +1258,28 @@
     <EmbeddedResource Include="_newDesign\_repoVMenu.resx">
       <DependentUpon>_repoVMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="CXC\Reporte\Dsreporte2.xsc">
+      <DependentUpon>Dsreporte2.xsd</DependentUpon>
+    </None>
+    <None Include="CXC\Reporte\Dsreporte2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dsreporte2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CXC\Reporte\Dsreporte2.xss">
+      <DependentUpon>Dsreporte2.xsd</DependentUpon>
+    </None>
+    <None Include="CXC\Reporte\Dtreportesfac2.xsc">
+      <DependentUpon>Dtreportesfac2.xsd</DependentUpon>
+    </None>
+    <None Include="CXC\Reporte\Dtreportesfac2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dtreportesfac2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CXC\Reporte\Dtreportesfac2.xss">
+      <DependentUpon>Dtreportesfac2.xsd</DependentUpon>
+    </None>
     <None Include="CXP\DataSet_General\DSCXC.xsc">
       <DependentUpon>DSCXC.xsd</DependentUpon>
     </None>
@@ -1243,6 +1345,17 @@
     </None>
     <None Include="duke2019DataSet1.xss">
       <DependentUpon>duke2019DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="duke2019DataSet2.xsc">
+      <DependentUpon>duke2019DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="duke2019DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>duke2019DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="duke2019DataSet2.xss">
+      <DependentUpon>duke2019DataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -1532,6 +1645,18 @@
     <None Include="Resources\abajoazul11.png" />
     <None Include="Resources\barracontrol.png" />
     <Content Include="SqlServerTypes\readme.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -87,15 +87,15 @@ namespace Duke4.CXC.Proceso
         private void btnBuscar4_Click(object sender, EventArgs e)
         {
            
-            MainFormConsultaGeneral Consulta_factura = new MainFormConsultaGeneral("select idfactura as codigo, referencia as descripcion from prudbffactura", "referencia", "factura");
-
-            if (Consulta_factura.ShowDialog(this) == DialogResult.OK)
-
+            MainFormConsultaGeneral Consulta_Registro = new MainFormConsultaGeneral("select secuencia as codigo, nombre as descripcion from prudbffactura inner join cxcdbfcliente on cxcdbfcliente.idcliente=prudbffactura.idcliente where prudbffactura.nulo=0  ", "referencia", "factura");
+            if (Consulta_Registro.ShowDialog(this) == DialogResult.OK)
             {
-
-                Txtfactura.Text = Consulta_factura.MainGrid.SelectedRows[0].Cells[0].Value.ToString();
+                Txtfactura.Text = Consulta_Registro.MainGrid.SelectedRows[0].Cells[0].Value.ToString();
+                BtnCrear.Enabled = false;
                 Completar_factura();
+
             }
+            
         }
 
         private void Completar_factura()
@@ -351,10 +351,7 @@ namespace Duke4.CXC.Proceso
 
         private void Txtimporte_TextChanged(object sender, EventArgs e)
         {
-
-
-
-
+  
         }
         protected void Fun_Calcular_Neto()
         {
@@ -409,9 +406,16 @@ namespace Duke4.CXC.Proceso
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Reporte_General.Form1 f = new Reporte_General.Form1();
-            //f.secuencia = Convert.ToInt32(Txtfactura.Text);
-            f.Show();
+            
+        }
+        private void Txtfactura_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void Cmbmoneda_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
     

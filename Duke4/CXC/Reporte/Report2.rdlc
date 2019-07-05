@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value xml:space="preserve">                                                           </Value>
+                <Style>
+                  <FontFamily>times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!Nombreempresa.Value</Value>
+                <Style>
+                  <FontFamily>times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value xml:space="preserve">                                                           </Value>
+                <Style>
+                  <FontFamily>times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!Direccionempresa.Value</Value>
+                <Style>
+                  <FontFamily>times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value xml:space="preserve">                                                           </Value>
+                <Style>
+                  <FontFamily>times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!Telefonoempresa.Value</Value>
+                <Style>
+                  <FontFamily>times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value xml:space="preserve">                                                           </Value>
+                <Style>
+                  <FontFamily>times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!RNCempresa.Value</Value>
+                <Style>
+                  <FontFamily>times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value xml:space="preserve">                                                           </Value>
+                <Style>
+                  <FontFamily>times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!Emailempresa.Value</Value>
+                <Style>
+                  <FontFamily>times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Left>0.10292in</Left>
+        <Height>1.27306in</Height>
+        <Width>6.39708in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>                                          Datos cliente.</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Nombre:</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!nombre.Value</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>                                                                                            Direccion:</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!direccion.Value</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!idconcepto.Value</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!itbis.Value</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!neto.Value</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Telefono:</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!telefono.Value</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>                                                                                                                  Neto total:      </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Sum(Fields!neto.Value)</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>---------------------------------------------------------------------------------------------------------------------------------------------</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>                              Datos generales..</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Fecha ingreso: </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!fecha_ingreso.Value</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!copia.Value</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>                                                                        Itbis:</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!itbis.Value</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Fecha vencimiento:</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!fecha_vencimiento.Value</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">                                                  </Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Nota</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!nota.Value</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Descripcion del concepto: </Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!descripcion.Value</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>                                                                  Excento:</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!excento.Value</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>1.3425in</Top>
+        <Left>0.10292in</Left>
+        <Height>2.39583in</Height>
+        <Width>6.10417in</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>3.92583in</Height>
+    <Style>
+      <Border>
+        <Style>Solid</Style>
+      </Border>
+    </Style>
+  </Body>
+  <Width>6.5in</Width>
+  <Page>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="Dsreporte2">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>bbeeba06-5c5f-44ed-889f-a0c96ab8ac9b</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="Dsreportess2">
+      <Query>
+        <DataSourceName>Dsreporte2</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="idfactura">
+          <DataField>idfactura</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="nombre">
+          <DataField>nombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="referencia">
+          <DataField>referencia</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="direccion">
+          <DataField>direccion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="telefono">
+          <DataField>telefono</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="idvendedor">
+          <DataField>idvendedor</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="excento">
+          <DataField>excento</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="itbis">
+          <DataField>itbis</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="nota">
+          <DataField>nota</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="neto">
+          <DataField>neto</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="nfc">
+          <DataField>nfc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fecha_ingreso">
+          <DataField>fecha_ingreso</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="fecha_vencimiento">
+          <DataField>fecha_vencimiento</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="NombreVendedor">
+          <DataField>NombreVendedor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="descripcion">
+          <DataField>descripcion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="idconcepto">
+          <DataField>idconcepto</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TelefonoVendedor">
+          <DataField>TelefonoVendedor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Dsreporte2</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\Terminal017\Desktop\Duke4-master\Duke4-master\Duke4\CXC\Reporte\Dsreporte2.xsd</rd:SchemaPath>
+        <rd:TableName>reportefactura2</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>reportefactura2TableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="copia">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Nombreempresa">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Direccionempresa">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Telefonoempresa">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RNCempresa">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Emailempresa">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>c430afd1-35ea-439b-831c-2cc93cca2987</rd:ReportID>
+</Report>

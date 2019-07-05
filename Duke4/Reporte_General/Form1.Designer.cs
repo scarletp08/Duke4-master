@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.dataSet1 = new Duke4.Reporte_General.DataSet1();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportefacturaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new Duke4.Reporte_General.DataSet1();
             this.reportefacturaTableAdapter = new Duke4.Reporte_General.DataSet1TableAdapters.reportefacturaTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reportefacturaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.reportefacturaBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.reportefacturaBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Duke4.Reporte_General.Rpruebafactura.rdlc";
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportefacturaBindingSource
             // 
             this.reportefacturaBindingSource.DataMember = "reportefactura";
             this.reportefacturaBindingSource.DataSource = this.dataSet1;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportefacturaTableAdapter
             // 
@@ -65,8 +65,8 @@
             this.Name = "Form1";
             this.Text = "MainReporte";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reportefacturaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }

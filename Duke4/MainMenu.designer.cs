@@ -75,6 +75,7 @@
             this.balanceInicialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.pruebaEstudianteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.prueba2EstudianteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cxcrep = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeFacturaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -87,6 +88,7 @@
             this.cobroPorAdelantadoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.acuerdoDePagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.históricoDePagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pruebaReporteFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cxccon = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reciboDeIngresoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -116,7 +118,7 @@
             this.repoMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.procesoMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pruebaReporteFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pruebaEstudianteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.HeaderPanel.SuspendLayout();
             this.panelOptions.SuspendLayout();
@@ -439,7 +441,8 @@
             this.acuerdoDePagoToolStripMenuItem,
             this.balanceInicialToolStripMenuItem,
             this.toolStripSeparator3,
-            this.pruebaEstudianteToolStripMenuItem1});
+            this.pruebaEstudianteToolStripMenuItem1,
+            this.prueba2EstudianteToolStripMenuItem});
             this.cxcpro.Name = "cxcpro";
             this.cxcpro.Size = new System.Drawing.Size(152, 22);
             this.cxcpro.Text = "Proceso";
@@ -529,6 +532,13 @@
             this.pruebaEstudianteToolStripMenuItem1.Text = "Prueba estudiante";
             this.pruebaEstudianteToolStripMenuItem1.Click += new System.EventHandler(this.pruebaEstudianteToolStripMenuItem1_Click);
             // 
+            // prueba2EstudianteToolStripMenuItem
+            // 
+            this.prueba2EstudianteToolStripMenuItem.Name = "prueba2EstudianteToolStripMenuItem";
+            this.prueba2EstudianteToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.prueba2EstudianteToolStripMenuItem.Text = "Prueba2 estudiante";
+            this.prueba2EstudianteToolStripMenuItem.Click += new System.EventHandler(this.prueba2EstudianteToolStripMenuItem_Click);
+            // 
             // cxcrep
             // 
             this.cxcrep.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -543,7 +553,8 @@
             this.cobroPorAdelantadoToolStripMenuItem1,
             this.acuerdoDePagosToolStripMenuItem,
             this.históricoDePagosToolStripMenuItem,
-            this.pruebaReporteFacturaToolStripMenuItem});
+            this.pruebaReporteFacturaToolStripMenuItem,
+            this.pruebaEstudianteToolStripMenuItem2});
             this.cxcrep.Name = "cxcrep";
             this.cxcrep.Size = new System.Drawing.Size(152, 22);
             this.cxcrep.Text = "Reporte";
@@ -625,6 +636,13 @@
             this.históricoDePagosToolStripMenuItem.Size = new System.Drawing.Size(235, 22);
             this.históricoDePagosToolStripMenuItem.Text = "Histórico de Pagos";
             this.históricoDePagosToolStripMenuItem.Click += new System.EventHandler(this.históricoDePagosToolStripMenuItem_Click);
+            // 
+            // pruebaReporteFacturaToolStripMenuItem
+            // 
+            this.pruebaReporteFacturaToolStripMenuItem.Name = "pruebaReporteFacturaToolStripMenuItem";
+            this.pruebaReporteFacturaToolStripMenuItem.Size = new System.Drawing.Size(235, 22);
+            this.pruebaReporteFacturaToolStripMenuItem.Text = "Prueba reporte factura";
+            this.pruebaReporteFacturaToolStripMenuItem.Click += new System.EventHandler(this.pruebaReporteFacturaToolStripMenuItem_Click);
             // 
             // cxccon
             // 
@@ -837,12 +855,12 @@
             this.procesoMenuToolStripMenuItem.Text = "Proceso Menu";
             this.procesoMenuToolStripMenuItem.Click += new System.EventHandler(this.procesoMenuToolStripMenuItem_Click);
             // 
-            // pruebaReporteFacturaToolStripMenuItem
+            // pruebaEstudianteToolStripMenuItem2
             // 
-            this.pruebaReporteFacturaToolStripMenuItem.Name = "pruebaReporteFacturaToolStripMenuItem";
-            this.pruebaReporteFacturaToolStripMenuItem.Size = new System.Drawing.Size(235, 22);
-            this.pruebaReporteFacturaToolStripMenuItem.Text = "Prueba reporte factura";
-            this.pruebaReporteFacturaToolStripMenuItem.Click += new System.EventHandler(this.pruebaReporteFacturaToolStripMenuItem_Click);
+            this.pruebaEstudianteToolStripMenuItem2.Name = "pruebaEstudianteToolStripMenuItem2";
+            this.pruebaEstudianteToolStripMenuItem2.Size = new System.Drawing.Size(235, 22);
+            this.pruebaEstudianteToolStripMenuItem2.Text = "Prueba estudiante";
+            this.pruebaEstudianteToolStripMenuItem2.Click += new System.EventHandler(this.pruebaEstudianteToolStripMenuItem2_Click);
             // 
             // MainMenu
             // 
@@ -964,5 +982,7 @@
         private System.Windows.Forms.ToolStripMenuItem pruebaEstudianteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pruebaEstudianteToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pruebaReporteFacturaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem prueba2EstudianteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pruebaEstudianteToolStripMenuItem2;
     }
 }

@@ -73,13 +73,11 @@
             this.Txtdireccion = new Duke4.Logistica.TxtBase();
             this.Btnconcento = new Duke4.Logistica.BtnBuscar();
             this.Btnvendedor = new Duke4.Logistica.BtnBuscar();
-            this.btnBase1 = new Duke4.Logistica.BtnBase();
             this.MainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainPanel
             // 
-            this.MainPanel.Controls.Add(this.btnBase1);
             this.MainPanel.Controls.Add(this.Btnvendedor);
             this.MainPanel.Controls.Add(this.Btnconcento);
             this.MainPanel.Controls.Add(this.Txtdireccion);
@@ -171,7 +169,6 @@
             this.MainPanel.Controls.SetChildIndex(this.Txtdireccion, 0);
             this.MainPanel.Controls.SetChildIndex(this.Btnconcento, 0);
             this.MainPanel.Controls.SetChildIndex(this.Btnvendedor, 0);
-            this.MainPanel.Controls.SetChildIndex(this.btnBase1, 0);
             // 
             // LblAlerta
             // 
@@ -641,17 +638,6 @@
             this.Btnvendedor.UseVisualStyleBackColor = false;
             this.Btnvendedor.Click += new System.EventHandler(this.Btnvendedor_Click);
             // 
-            // btnBase1
-            // 
-            this.btnBase1.BackColor = System.Drawing.Color.AliceBlue;
-            this.btnBase1.Location = new System.Drawing.Point(638, 17);
-            this.btnBase1.Name = "btnBase1";
-            this.btnBase1.Size = new System.Drawing.Size(75, 23);
-            this.btnBase1.TabIndex = 113;
-            this.btnBase1.Text = " ";
-            this.btnBase1.UseVisualStyleBackColor = false;
-            this.btnBase1.Click += new System.EventHandler(this.btnBase1_Click);
-            // 
             // Datos_factura2
             // 
             this.ClientSize = new System.Drawing.Size(908, 691);
@@ -710,6 +696,5 @@
         private Logistica.LblBase lblBase18;
         private Logistica.BtnBuscar Btnvendedor;
         private Logistica.BtnBuscar Btnconcento;
-        private Logistica.BtnBase btnBase1;
     }
 }

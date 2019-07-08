@@ -22,7 +22,7 @@ namespace Duke4.CXC.Proceso
         {
 
         }
-
+       
         private void btnBuscar2_Click(object sender, EventArgs e)
         {
             MFConsulta_Cliente consulta = new MFConsulta_Cliente("=");
@@ -145,7 +145,7 @@ namespace Duke4.CXC.Proceso
 
         protected void Fun_Buscar_factura()
         {
-            if (Txtidcliente.Fun_SQL_Buscar_CodigoRegistro("prudbffactura", "idfactura"))
+            if (Txtidcliente.Fun_SQL_Buscar_CodigoRegistro("prudbffactura2", "idfactura"))
             {
                 DataSet ds = Txtidcliente._Dataset;
                 if (ds.Tables[0].Rows[0]["idfactura"].ToString() == "1")
@@ -271,7 +271,7 @@ namespace Duke4.CXC.Proceso
                 else
                     idfactura = Funciones.Fun_Convierte_String_aEntrero(ds.Tables[1].Rows[0][0].ToString());
 
-                var Reporte = new Reporte.Forreporte22();
+                var Reporte = new Reporte.Form2();
                 Reporte.Idfactura = idfactura;
                 Reporte.Show();
                Reporte.Owner = this;
@@ -309,7 +309,7 @@ namespace Duke4.CXC.Proceso
 
         private void btnBase1_Click(object sender, EventArgs e)
         {
-          
+            
         }
     }
 

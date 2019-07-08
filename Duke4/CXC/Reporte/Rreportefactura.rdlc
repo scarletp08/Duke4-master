@@ -2,18 +2,23 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <Body>
     <ReportItems>
-      <Textbox Name="Textbox1">
+      <Textbox Name="Textbox21">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
         <Paragraphs>
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value xml:space="preserve">                                                           </Value>
-                <Style>
-                  <FontFamily>times New Roman</FontFamily>
-                </Style>
+                <Value />
+                <Style />
               </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
               <TextRun>
                 <Value>=Parameters!Nombreempresa.Value</Value>
                 <Style>
@@ -21,33 +26,12 @@
                 </Style>
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
           <Paragraph>
             <TextRuns>
-              <TextRun>
-                <Value xml:space="preserve">                                                           </Value>
-                <Style>
-                  <FontFamily>times New Roman</FontFamily>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>=Parameters!Direccionempresa.Value</Value>
-                <Style>
-                  <FontFamily>times New Roman</FontFamily>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value xml:space="preserve">                                                           </Value>
-                <Style>
-                  <FontFamily>times New Roman</FontFamily>
-                </Style>
-              </TextRun>
               <TextRun>
                 <Value>=Parameters!Telefonoempresa.Value</Value>
                 <Style>
@@ -55,16 +39,12 @@
                 </Style>
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
           <Paragraph>
             <TextRuns>
-              <TextRun>
-                <Value xml:space="preserve">                                                           </Value>
-                <Style>
-                  <FontFamily>times New Roman</FontFamily>
-                </Style>
-              </TextRun>
               <TextRun>
                 <Value>=Parameters!RNCempresa.Value</Value>
                 <Style>
@@ -72,30 +52,35 @@
                 </Style>
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
           <Paragraph>
             <TextRuns>
-              <TextRun>
-                <Value xml:space="preserve">                                                           </Value>
-                <Style>
-                  <FontFamily>times New Roman</FontFamily>
-                </Style>
-              </TextRun>
               <TextRun>
                 <Value>=Parameters!Emailempresa.Value</Value>
                 <Style>
                   <FontFamily>times New Roman</FontFamily>
                 </Style>
               </TextRun>
+              <TextRun>
+                <Value>-</Value>
+                <Style>
+                  <FontFamily>times New Roman</FontFamily>
+                </Style>
+              </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
-        <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Left>0.10292in</Left>
-        <Height>1.27306in</Height>
-        <Width>6.39708in</Width>
+        <rd:DefaultName>Textbox21</rd:DefaultName>
+        <Top>0.09723in</Top>
+        <Left>2.69097in</Left>
+        <Height>1.32167in</Height>
+        <Width>1.32166in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -106,15 +91,28 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
-      <Textbox Name="Textbox2">
+      <Textbox Name="Textbox9">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
         <Paragraphs>
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>                                          Datos cliente.</Value>
-                <Style />
+                <Value>                                                                          Registro de factura  </Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>-----------------------------------------------------------------------------------------------------------------------------------------------</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -123,7 +121,9 @@
             <TextRuns>
               <TextRun>
                 <Value />
-                <Style />
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -131,29 +131,63 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value />
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Nombre:</Value>
-                <Style />
+                <Value>Nombre del cliente:</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
               </TextRun>
               <TextRun>
                 <Value>=Fields!nombre.Value</Value>
-                <Style />
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
               </TextRun>
               <TextRun>
-                <Value>                                                                                            Direccion:</Value>
-                <Style />
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!copia.Value</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">                                                        </Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Direccion:</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
               </TextRun>
               <TextRun>
                 <Value>=Fields!direccion.Value</Value>
-                <Style />
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>                                                                                       Telefono: </Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!telefono.Value</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -161,56 +195,105 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!idconcepto.Value</Value>
-                <Style />
+                <Value>Excento: </Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
               </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
+              <TextRun>
+                <Value>=Fields!excento.Value</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>                                                                                            Itbis:</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
               <TextRun>
                 <Value>=Fields!itbis.Value</Value>
-                <Style />
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
           </Paragraph>
           <Paragraph>
             <TextRuns>
+              <TextRun>
+                <Value>Nota:</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!nota.Value</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">     </Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Neto:  </Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
               <TextRun>
                 <Value>=Fields!neto.Value</Value>
                 <Style />
               </TextRun>
+              <TextRun>
+                <Value>                                                                                                       NFC: </Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!nfc.Value</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
+              </TextRun>
             </TextRuns>
             <Style />
           </Paragraph>
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Telefono:</Value>
-                <Style />
-              </TextRun>
-              <TextRun>
-                <Value>=Fields!telefono.Value</Value>
-                <Style />
-              </TextRun>
-              <TextRun>
-                <Value>                                                                                                                  Neto total:      </Value>
-                <Style />
+                <Value> Neto Total:</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
               </TextRun>
               <TextRun>
                 <Value>=Sum(Fields!neto.Value)</Value>
                 <Style />
               </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
               <TextRun>
-                <Value>---------------------------------------------------------------------------------------------------------------------------------------------</Value>
-                <Style />
+                <Value xml:space="preserve">                                                                                        </Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -218,7 +301,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>                              Datos generales..</Value>
+                <Value />
                 <Style />
               </TextRun>
             </TextRuns>
@@ -236,27 +319,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Fecha ingreso: </Value>
-                <Style />
-              </TextRun>
-              <TextRun>
-                <Value>=Fields!fecha_ingreso.Value</Value>
-                <Style />
-              </TextRun>
-              <TextRun>
-                <Value xml:space="preserve"> </Value>
-                <Style />
-              </TextRun>
-              <TextRun>
-                <Value>=Parameters!copia.Value</Value>
-                <Style />
-              </TextRun>
-              <TextRun>
-                <Value>                                                                        Itbis:</Value>
-                <Style />
-              </TextRun>
-              <TextRun>
-                <Value>=Fields!itbis.Value</Value>
+                <Value>---------------------------------------------------------------------------------------------------------------------------------------------------</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -265,15 +328,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Fecha vencimiento:</Value>
-                <Style />
-              </TextRun>
-              <TextRun>
-                <Value>=Fields!fecha_vencimiento.Value</Value>
-                <Style />
-              </TextRun>
-              <TextRun>
-                <Value xml:space="preserve">                                                  </Value>
+                <Value>                                                   Datos del vendedor.</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -282,11 +337,19 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Nota</Value>
+                <Value>Nombre del vendedor:</Value>
                 <Style />
               </TextRun>
               <TextRun>
-                <Value>=Fields!nota.Value</Value>
+                <Value>=Fields!NombreVendedor.Value</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>                                   Telefono:</Value>
+                <Style />
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!TelefonoVendedor.Value</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -295,7 +358,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Descripcion del concepto: </Value>
+                <Value>Descripcion del concepto:</Value>
                 <Style />
               </TextRun>
               <TextRun>
@@ -303,22 +366,26 @@
                 <Style />
               </TextRun>
               <TextRun>
-                <Value>                                                                  Excento:</Value>
+                <Value xml:space="preserve">                        </Value>
                 <Style />
               </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
               <TextRun>
-                <Value>=Fields!excento.Value</Value>
+                <Value />
                 <Style />
               </TextRun>
             </TextRuns>
             <Style />
           </Paragraph>
         </Paragraphs>
-        <rd:DefaultName>Textbox2</rd:DefaultName>
-        <Top>1.3425in</Top>
-        <Left>0.10292in</Left>
-        <Height>2.39583in</Height>
-        <Width>6.10417in</Width>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>1.46056in</Top>
+        <Height>2.58333in</Height>
+        <Width>8.16667in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -330,15 +397,90 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Fecha_Ingreso:</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!fecha_ingreso.Value</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Fecha_vencimiento:</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!fecha_vencimiento.Value</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Referencia:</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!referencia.Value</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>0.09723in</Top>
+        <Left>4.25916in</Left>
+        <Height>0.58333in</Height>
+        <Width>2.0625in</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>3.92583in</Height>
-    <Style>
-      <Border>
-        <Style>Solid</Style>
-      </Border>
-    </Style>
+    <Height>4.41542in</Height>
+    <Style />
   </Body>
-  <Width>6.5in</Width>
+  <Width>12.37375in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>
@@ -348,18 +490,25 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="Dsreporte2">
+    <DataSource Name="datosfactura2">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>bbeeba06-5c5f-44ed-889f-a0c96ab8ac9b</rd:DataSourceID>
+      <rd:DataSourceID>7e010b36-dd68-46c2-996e-d0704ab76372</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="DataSet1234">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>a775c584-3a81-4e25-a8cd-3124ee4481e6</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="Dsreportess2">
+    <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>Dsreporte2</DataSourceName>
+        <DataSourceName>DataSet1234</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -433,12 +582,12 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>Dsreporte2</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Terminal017\Desktop\Duke4-master\Duke4-master\Duke4\CXC\Reporte\Dsreporte2.xsd</rd:SchemaPath>
-        <rd:TableName>reportefactura2</rd:TableName>
+        <rd:DataSetName>DataSet1234</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\Terminal017\Desktop\Duke4-master\Duke4-master\Duke4\CXC\Reporte\DataSet1234.xsd</rd:SchemaPath>
+        <rd:TableName>reportefactura1</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>reportefactura2TableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>reportefactura1TableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -481,5 +630,5 @@
     </ReportParameter>
   </ReportParameters>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>c430afd1-35ea-439b-831c-2cc93cca2987</rd:ReportID>
+  <rd:ReportID>01696a05-e657-4b53-9971-014ddf7e9bcb</rd:ReportID>
 </Report>

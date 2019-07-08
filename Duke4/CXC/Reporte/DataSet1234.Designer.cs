@@ -20,17 +20,17 @@ namespace Duke4.CXC.Reporte {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("Dtreportesfac2")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DataSet1234")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class Dtreportesfac2 : global::System.Data.DataSet {
+    public partial class DataSet1234 : global::System.Data.DataSet {
         
-        private sprprocesofactura2DataTable tablesprprocesofactura2;
+        private reportefactura1DataTable tablereportefactura1;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public Dtreportesfac2() {
+        public DataSet1234() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Duke4.CXC.Reporte {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected Dtreportesfac2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DataSet1234(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Duke4.CXC.Reporte {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["sprprocesofactura2"] != null)) {
-                    base.Tables.Add(new sprprocesofactura2DataTable(ds.Tables["sprprocesofactura2"]));
+                if ((ds.Tables["reportefactura1"] != null)) {
+                    base.Tables.Add(new reportefactura1DataTable(ds.Tables["reportefactura1"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Duke4.CXC.Reporte {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public sprprocesofactura2DataTable sprprocesofactura2 {
+        public reportefactura1DataTable reportefactura1 {
             get {
-                return this.tablesprprocesofactura2;
+                return this.tablereportefactura1;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Duke4.CXC.Reporte {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            Dtreportesfac2 cln = ((Dtreportesfac2)(base.Clone()));
+            DataSet1234 cln = ((DataSet1234)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Duke4.CXC.Reporte {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["sprprocesofactura2"] != null)) {
-                    base.Tables.Add(new sprprocesofactura2DataTable(ds.Tables["sprprocesofactura2"]));
+                if ((ds.Tables["reportefactura1"] != null)) {
+                    base.Tables.Add(new reportefactura1DataTable(ds.Tables["reportefactura1"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Duke4.CXC.Reporte {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablesprprocesofactura2 = ((sprprocesofactura2DataTable)(base.Tables["sprprocesofactura2"]));
+            this.tablereportefactura1 = ((reportefactura1DataTable)(base.Tables["reportefactura1"]));
             if ((initTable == true)) {
-                if ((this.tablesprprocesofactura2 != null)) {
-                    this.tablesprprocesofactura2.InitVars();
+                if ((this.tablereportefactura1 != null)) {
+                    this.tablereportefactura1.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Duke4.CXC.Reporte {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "Dtreportesfac2";
+            this.DataSetName = "DataSet1234";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/Dtreportesfac2.xsd";
+            this.Namespace = "http://tempuri.org/DataSet1234.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablesprprocesofactura2 = new sprprocesofactura2DataTable();
-            base.Tables.Add(this.tablesprprocesofactura2);
+            this.tablereportefactura1 = new reportefactura1DataTable();
+            base.Tables.Add(this.tablereportefactura1);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializesprprocesofactura2() {
+        private bool ShouldSerializereportefactura1() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Duke4.CXC.Reporte {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            Dtreportesfac2 ds = new Dtreportesfac2();
+            DataSet1234 ds = new DataSet1234();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,36 +270,30 @@ namespace Duke4.CXC.Reporte {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void sprprocesofactura2RowChangeEventHandler(object sender, sprprocesofactura2RowChangeEvent e);
+        public delegate void reportefactura1RowChangeEventHandler(object sender, reportefactura1RowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class sprprocesofactura2DataTable : global::System.Data.TypedTableBase<sprprocesofactura2Row> {
+        public partial class reportefactura1DataTable : global::System.Data.TypedTableBase<reportefactura1Row> {
             
             private global::System.Data.DataColumn columnidfactura;
             
-            private global::System.Data.DataColumn columnsecuencia;
-            
             private global::System.Data.DataColumn columnnombre;
+            
+            private global::System.Data.DataColumn columnreferencia;
             
             private global::System.Data.DataColumn columndireccion;
             
             private global::System.Data.DataColumn columntelefono;
             
-            private global::System.Data.DataColumn columnNombreempleado;
-            
-            private global::System.Data.DataColumn columndescripcion;
-            
-            private global::System.Data.DataColumn columnbalance;
+            private global::System.Data.DataColumn columnidvendedor;
             
             private global::System.Data.DataColumn columnexcento;
             
-            private global::System.Data.DataColumn columnfecha_ingreso;
-            
-            private global::System.Data.DataColumn columnfecha_vencimiento;
+            private global::System.Data.DataColumn columnitbis;
             
             private global::System.Data.DataColumn columnnota;
             
@@ -307,12 +301,22 @@ namespace Duke4.CXC.Reporte {
             
             private global::System.Data.DataColumn columnnfc;
             
-            private global::System.Data.DataColumn columnreferencia;
+            private global::System.Data.DataColumn columnfecha_ingreso;
+            
+            private global::System.Data.DataColumn columnfecha_vencimiento;
+            
+            private global::System.Data.DataColumn columnNombreVendedor;
+            
+            private global::System.Data.DataColumn columndescripcion;
+            
+            private global::System.Data.DataColumn columnidconcepto;
+            
+            private global::System.Data.DataColumn columnTelefonoVendedor;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public sprprocesofactura2DataTable() {
-                this.TableName = "sprprocesofactura2";
+            public reportefactura1DataTable() {
+                this.TableName = "reportefactura1";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -320,7 +324,7 @@ namespace Duke4.CXC.Reporte {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal sprprocesofactura2DataTable(global::System.Data.DataTable table) {
+            internal reportefactura1DataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -337,7 +341,7 @@ namespace Duke4.CXC.Reporte {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected sprprocesofactura2DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected reportefactura1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -352,17 +356,17 @@ namespace Duke4.CXC.Reporte {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn secuenciaColumn {
+            public global::System.Data.DataColumn nombreColumn {
                 get {
-                    return this.columnsecuencia;
+                    return this.columnnombre;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn nombreColumn {
+            public global::System.Data.DataColumn referenciaColumn {
                 get {
-                    return this.columnnombre;
+                    return this.columnreferencia;
                 }
             }
             
@@ -384,25 +388,9 @@ namespace Duke4.CXC.Reporte {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn NombreempleadoColumn {
+            public global::System.Data.DataColumn idvendedorColumn {
                 get {
-                    return this.columnNombreempleado;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn descripcionColumn {
-                get {
-                    return this.columndescripcion;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn balanceColumn {
-                get {
-                    return this.columnbalance;
+                    return this.columnidvendedor;
                 }
             }
             
@@ -416,17 +404,9 @@ namespace Duke4.CXC.Reporte {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn fecha_ingresoColumn {
+            public global::System.Data.DataColumn itbisColumn {
                 get {
-                    return this.columnfecha_ingreso;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn fecha_vencimientoColumn {
-                get {
-                    return this.columnfecha_vencimiento;
+                    return this.columnitbis;
                 }
             }
             
@@ -456,9 +436,49 @@ namespace Duke4.CXC.Reporte {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn referenciaColumn {
+            public global::System.Data.DataColumn fecha_ingresoColumn {
                 get {
-                    return this.columnreferencia;
+                    return this.columnfecha_ingreso;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn fecha_vencimientoColumn {
+                get {
+                    return this.columnfecha_vencimiento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn NombreVendedorColumn {
+                get {
+                    return this.columnNombreVendedor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn descripcionColumn {
+                get {
+                    return this.columndescripcion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn idconceptoColumn {
+                get {
+                    return this.columnidconcepto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TelefonoVendedorColumn {
+                get {
+                    return this.columnTelefonoVendedor;
                 }
             }
             
@@ -473,59 +493,77 @@ namespace Duke4.CXC.Reporte {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public sprprocesofactura2Row this[int index] {
+            public reportefactura1Row this[int index] {
                 get {
-                    return ((sprprocesofactura2Row)(this.Rows[index]));
+                    return ((reportefactura1Row)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event sprprocesofactura2RowChangeEventHandler sprprocesofactura2RowChanging;
+            public event reportefactura1RowChangeEventHandler reportefactura1RowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event sprprocesofactura2RowChangeEventHandler sprprocesofactura2RowChanged;
+            public event reportefactura1RowChangeEventHandler reportefactura1RowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event sprprocesofactura2RowChangeEventHandler sprprocesofactura2RowDeleting;
+            public event reportefactura1RowChangeEventHandler reportefactura1RowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event sprprocesofactura2RowChangeEventHandler sprprocesofactura2RowDeleted;
+            public event reportefactura1RowChangeEventHandler reportefactura1RowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Addsprprocesofactura2Row(sprprocesofactura2Row row) {
+            public void Addreportefactura1Row(reportefactura1Row row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public sprprocesofactura2Row Addsprprocesofactura2Row(string secuencia, string nombre, string direccion, string telefono, string Nombreempleado, string descripcion, decimal balance, decimal excento, System.DateTime fecha_ingreso, System.DateTime fecha_vencimiento, string nota, decimal neto, string nfc, string referencia) {
-                sprprocesofactura2Row rowsprprocesofactura2Row = ((sprprocesofactura2Row)(this.NewRow()));
+            public reportefactura1Row Addreportefactura1Row(
+                        string nombre, 
+                        string referencia, 
+                        string direccion, 
+                        string telefono, 
+                        int idvendedor, 
+                        decimal excento, 
+                        decimal itbis, 
+                        string nota, 
+                        decimal neto, 
+                        string nfc, 
+                        System.DateTime fecha_ingreso, 
+                        System.DateTime fecha_vencimiento, 
+                        string NombreVendedor, 
+                        string descripcion, 
+                        int idconcepto, 
+                        string TelefonoVendedor) {
+                reportefactura1Row rowreportefactura1Row = ((reportefactura1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        secuencia,
                         nombre,
+                        referencia,
                         direccion,
                         telefono,
-                        Nombreempleado,
-                        descripcion,
-                        balance,
+                        idvendedor,
                         excento,
-                        fecha_ingreso,
-                        fecha_vencimiento,
+                        itbis,
                         nota,
                         neto,
                         nfc,
-                        referencia};
-                rowsprprocesofactura2Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowsprprocesofactura2Row);
-                return rowsprprocesofactura2Row;
+                        fecha_ingreso,
+                        fecha_vencimiento,
+                        NombreVendedor,
+                        descripcion,
+                        idconcepto,
+                        TelefonoVendedor};
+                rowreportefactura1Row.ItemArray = columnValuesArray;
+                this.Rows.Add(rowreportefactura1Row);
+                return rowreportefactura1Row;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                sprprocesofactura2DataTable cln = ((sprprocesofactura2DataTable)(base.Clone()));
+                reportefactura1DataTable cln = ((reportefactura1DataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -533,27 +571,29 @@ namespace Duke4.CXC.Reporte {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new sprprocesofactura2DataTable();
+                return new reportefactura1DataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnidfactura = base.Columns["idfactura"];
-                this.columnsecuencia = base.Columns["secuencia"];
                 this.columnnombre = base.Columns["nombre"];
+                this.columnreferencia = base.Columns["referencia"];
                 this.columndireccion = base.Columns["direccion"];
                 this.columntelefono = base.Columns["telefono"];
-                this.columnNombreempleado = base.Columns["Nombreempleado"];
-                this.columndescripcion = base.Columns["descripcion"];
-                this.columnbalance = base.Columns["balance"];
+                this.columnidvendedor = base.Columns["idvendedor"];
                 this.columnexcento = base.Columns["excento"];
-                this.columnfecha_ingreso = base.Columns["fecha_ingreso"];
-                this.columnfecha_vencimiento = base.Columns["fecha_vencimiento"];
+                this.columnitbis = base.Columns["itbis"];
                 this.columnnota = base.Columns["nota"];
                 this.columnneto = base.Columns["neto"];
                 this.columnnfc = base.Columns["nfc"];
-                this.columnreferencia = base.Columns["referencia"];
+                this.columnfecha_ingreso = base.Columns["fecha_ingreso"];
+                this.columnfecha_vencimiento = base.Columns["fecha_vencimiento"];
+                this.columnNombreVendedor = base.Columns["NombreVendedor"];
+                this.columndescripcion = base.Columns["descripcion"];
+                this.columnidconcepto = base.Columns["idconcepto"];
+                this.columnTelefonoVendedor = base.Columns["TelefonoVendedor"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -561,76 +601,79 @@ namespace Duke4.CXC.Reporte {
             private void InitClass() {
                 this.columnidfactura = new global::System.Data.DataColumn("idfactura", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnidfactura);
-                this.columnsecuencia = new global::System.Data.DataColumn("secuencia", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsecuencia);
                 this.columnnombre = new global::System.Data.DataColumn("nombre", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnombre);
+                this.columnreferencia = new global::System.Data.DataColumn("referencia", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnreferencia);
                 this.columndireccion = new global::System.Data.DataColumn("direccion", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndireccion);
                 this.columntelefono = new global::System.Data.DataColumn("telefono", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntelefono);
-                this.columnNombreempleado = new global::System.Data.DataColumn("Nombreempleado", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombreempleado);
-                this.columndescripcion = new global::System.Data.DataColumn("descripcion", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndescripcion);
-                this.columnbalance = new global::System.Data.DataColumn("balance", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnbalance);
+                this.columnidvendedor = new global::System.Data.DataColumn("idvendedor", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnidvendedor);
                 this.columnexcento = new global::System.Data.DataColumn("excento", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnexcento);
-                this.columnfecha_ingreso = new global::System.Data.DataColumn("fecha_ingreso", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfecha_ingreso);
-                this.columnfecha_vencimiento = new global::System.Data.DataColumn("fecha_vencimiento", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfecha_vencimiento);
+                this.columnitbis = new global::System.Data.DataColumn("itbis", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnitbis);
                 this.columnnota = new global::System.Data.DataColumn("nota", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnota);
                 this.columnneto = new global::System.Data.DataColumn("neto", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnneto);
                 this.columnnfc = new global::System.Data.DataColumn("nfc", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnfc);
-                this.columnreferencia = new global::System.Data.DataColumn("referencia", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnreferencia);
+                this.columnfecha_ingreso = new global::System.Data.DataColumn("fecha_ingreso", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnfecha_ingreso);
+                this.columnfecha_vencimiento = new global::System.Data.DataColumn("fecha_vencimiento", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnfecha_vencimiento);
+                this.columnNombreVendedor = new global::System.Data.DataColumn("NombreVendedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombreVendedor);
+                this.columndescripcion = new global::System.Data.DataColumn("descripcion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndescripcion);
+                this.columnidconcepto = new global::System.Data.DataColumn("idconcepto", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnidconcepto);
+                this.columnTelefonoVendedor = new global::System.Data.DataColumn("TelefonoVendedor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTelefonoVendedor);
                 this.columnidfactura.AutoIncrement = true;
                 this.columnidfactura.AllowDBNull = false;
                 this.columnidfactura.ReadOnly = true;
-                this.columnsecuencia.MaxLength = 10;
                 this.columnnombre.AllowDBNull = false;
                 this.columnnombre.MaxLength = 100;
+                this.columnreferencia.MaxLength = 30;
                 this.columndireccion.MaxLength = 200;
                 this.columntelefono.MaxLength = 20;
-                this.columnNombreempleado.AllowDBNull = false;
-                this.columnNombreempleado.MaxLength = 100;
-                this.columndescripcion.AllowDBNull = false;
-                this.columndescripcion.MaxLength = 2000;
-                this.columnbalance.AllowDBNull = false;
                 this.columnnota.MaxLength = 200;
                 this.columnnfc.MaxLength = 200;
-                this.columnreferencia.MaxLength = 50;
+                this.columnNombreVendedor.AllowDBNull = false;
+                this.columnNombreVendedor.MaxLength = 100;
+                this.columndescripcion.AllowDBNull = false;
+                this.columndescripcion.MaxLength = 2000;
+                this.columnTelefonoVendedor.MaxLength = 20;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public sprprocesofactura2Row Newsprprocesofactura2Row() {
-                return ((sprprocesofactura2Row)(this.NewRow()));
+            public reportefactura1Row Newreportefactura1Row() {
+                return ((reportefactura1Row)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new sprprocesofactura2Row(builder);
+                return new reportefactura1Row(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(sprprocesofactura2Row);
+                return typeof(reportefactura1Row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.sprprocesofactura2RowChanged != null)) {
-                    this.sprprocesofactura2RowChanged(this, new sprprocesofactura2RowChangeEvent(((sprprocesofactura2Row)(e.Row)), e.Action));
+                if ((this.reportefactura1RowChanged != null)) {
+                    this.reportefactura1RowChanged(this, new reportefactura1RowChangeEvent(((reportefactura1Row)(e.Row)), e.Action));
                 }
             }
             
@@ -638,8 +681,8 @@ namespace Duke4.CXC.Reporte {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.sprprocesofactura2RowChanging != null)) {
-                    this.sprprocesofactura2RowChanging(this, new sprprocesofactura2RowChangeEvent(((sprprocesofactura2Row)(e.Row)), e.Action));
+                if ((this.reportefactura1RowChanging != null)) {
+                    this.reportefactura1RowChanging(this, new reportefactura1RowChangeEvent(((reportefactura1Row)(e.Row)), e.Action));
                 }
             }
             
@@ -647,8 +690,8 @@ namespace Duke4.CXC.Reporte {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.sprprocesofactura2RowDeleted != null)) {
-                    this.sprprocesofactura2RowDeleted(this, new sprprocesofactura2RowChangeEvent(((sprprocesofactura2Row)(e.Row)), e.Action));
+                if ((this.reportefactura1RowDeleted != null)) {
+                    this.reportefactura1RowDeleted(this, new reportefactura1RowChangeEvent(((reportefactura1Row)(e.Row)), e.Action));
                 }
             }
             
@@ -656,14 +699,14 @@ namespace Duke4.CXC.Reporte {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.sprprocesofactura2RowDeleting != null)) {
-                    this.sprprocesofactura2RowDeleting(this, new sprprocesofactura2RowChangeEvent(((sprprocesofactura2Row)(e.Row)), e.Action));
+                if ((this.reportefactura1RowDeleting != null)) {
+                    this.reportefactura1RowDeleting(this, new reportefactura1RowChangeEvent(((reportefactura1Row)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Removesprprocesofactura2Row(sprprocesofactura2Row row) {
+            public void Removereportefactura1Row(reportefactura1Row row) {
                 this.Rows.Remove(row);
             }
             
@@ -672,7 +715,7 @@ namespace Duke4.CXC.Reporte {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Dtreportesfac2 ds = new Dtreportesfac2();
+                DataSet1234 ds = new DataSet1234();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -690,7 +733,7 @@ namespace Duke4.CXC.Reporte {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "sprprocesofactura2DataTable";
+                attribute2.FixedValue = "reportefactura1DataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -734,41 +777,25 @@ namespace Duke4.CXC.Reporte {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class sprprocesofactura2Row : global::System.Data.DataRow {
+        public partial class reportefactura1Row : global::System.Data.DataRow {
             
-            private sprprocesofactura2DataTable tablesprprocesofactura2;
+            private reportefactura1DataTable tablereportefactura1;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal sprprocesofactura2Row(global::System.Data.DataRowBuilder rb) : 
+            internal reportefactura1Row(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablesprprocesofactura2 = ((sprprocesofactura2DataTable)(this.Table));
+                this.tablereportefactura1 = ((reportefactura1DataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int idfactura {
                 get {
-                    return ((int)(this[this.tablesprprocesofactura2.idfacturaColumn]));
+                    return ((int)(this[this.tablereportefactura1.idfacturaColumn]));
                 }
                 set {
-                    this[this.tablesprprocesofactura2.idfacturaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string secuencia {
-                get {
-                    try {
-                        return ((string)(this[this.tablesprprocesofactura2.secuenciaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'secuencia\' de la tabla \'sprprocesofactura2\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablesprprocesofactura2.secuenciaColumn] = value;
+                    this[this.tablereportefactura1.idfacturaColumn] = value;
                 }
             }
             
@@ -776,173 +803,10 @@ namespace Duke4.CXC.Reporte {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string nombre {
                 get {
-                    return ((string)(this[this.tablesprprocesofactura2.nombreColumn]));
+                    return ((string)(this[this.tablereportefactura1.nombreColumn]));
                 }
                 set {
-                    this[this.tablesprprocesofactura2.nombreColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string direccion {
-                get {
-                    try {
-                        return ((string)(this[this.tablesprprocesofactura2.direccionColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'direccion\' de la tabla \'sprprocesofactura2\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablesprprocesofactura2.direccionColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string telefono {
-                get {
-                    try {
-                        return ((string)(this[this.tablesprprocesofactura2.telefonoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'telefono\' de la tabla \'sprprocesofactura2\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablesprprocesofactura2.telefonoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Nombreempleado {
-                get {
-                    return ((string)(this[this.tablesprprocesofactura2.NombreempleadoColumn]));
-                }
-                set {
-                    this[this.tablesprprocesofactura2.NombreempleadoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string descripcion {
-                get {
-                    return ((string)(this[this.tablesprprocesofactura2.descripcionColumn]));
-                }
-                set {
-                    this[this.tablesprprocesofactura2.descripcionColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal balance {
-                get {
-                    return ((decimal)(this[this.tablesprprocesofactura2.balanceColumn]));
-                }
-                set {
-                    this[this.tablesprprocesofactura2.balanceColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal excento {
-                get {
-                    try {
-                        return ((decimal)(this[this.tablesprprocesofactura2.excentoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'excento\' de la tabla \'sprprocesofactura2\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablesprprocesofactura2.excentoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public System.DateTime fecha_ingreso {
-                get {
-                    try {
-                        return ((global::System.DateTime)(this[this.tablesprprocesofactura2.fecha_ingresoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'fecha_ingreso\' de la tabla \'sprprocesofactura2\' es DBNull" +
-                                ".", e);
-                    }
-                }
-                set {
-                    this[this.tablesprprocesofactura2.fecha_ingresoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public System.DateTime fecha_vencimiento {
-                get {
-                    try {
-                        return ((global::System.DateTime)(this[this.tablesprprocesofactura2.fecha_vencimientoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'fecha_vencimiento\' de la tabla \'sprprocesofactura2\' es DB" +
-                                "Null.", e);
-                    }
-                }
-                set {
-                    this[this.tablesprprocesofactura2.fecha_vencimientoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string nota {
-                get {
-                    try {
-                        return ((string)(this[this.tablesprprocesofactura2.notaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nota\' de la tabla \'sprprocesofactura2\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablesprprocesofactura2.notaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal neto {
-                get {
-                    try {
-                        return ((decimal)(this[this.tablesprprocesofactura2.netoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'neto\' de la tabla \'sprprocesofactura2\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablesprprocesofactura2.netoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string nfc {
-                get {
-                    try {
-                        return ((string)(this[this.tablesprprocesofactura2.nfcColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nfc\' de la tabla \'sprprocesofactura2\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablesprprocesofactura2.nfcColumn] = value;
+                    this[this.tablereportefactura1.nombreColumn] = value;
                 }
             }
             
@@ -951,135 +815,387 @@ namespace Duke4.CXC.Reporte {
             public string referencia {
                 get {
                     try {
-                        return ((string)(this[this.tablesprprocesofactura2.referenciaColumn]));
+                        return ((string)(this[this.tablereportefactura1.referenciaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'referencia\' de la tabla \'sprprocesofactura2\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'referencia\' de la tabla \'reportefactura1\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablesprprocesofactura2.referenciaColumn] = value;
+                    this[this.tablereportefactura1.referenciaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IssecuenciaNull() {
-                return this.IsNull(this.tablesprprocesofactura2.secuenciaColumn);
+            public string direccion {
+                get {
+                    try {
+                        return ((string)(this[this.tablereportefactura1.direccionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'direccion\' de la tabla \'reportefactura1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablereportefactura1.direccionColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetsecuenciaNull() {
-                this[this.tablesprprocesofactura2.secuenciaColumn] = global::System.Convert.DBNull;
+            public string telefono {
+                get {
+                    try {
+                        return ((string)(this[this.tablereportefactura1.telefonoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'telefono\' de la tabla \'reportefactura1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablereportefactura1.telefonoColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsdireccionNull() {
-                return this.IsNull(this.tablesprprocesofactura2.direccionColumn);
+            public int idvendedor {
+                get {
+                    try {
+                        return ((int)(this[this.tablereportefactura1.idvendedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'idvendedor\' de la tabla \'reportefactura1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablereportefactura1.idvendedorColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetdireccionNull() {
-                this[this.tablesprprocesofactura2.direccionColumn] = global::System.Convert.DBNull;
+            public decimal excento {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablereportefactura1.excentoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'excento\' de la tabla \'reportefactura1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablereportefactura1.excentoColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IstelefonoNull() {
-                return this.IsNull(this.tablesprprocesofactura2.telefonoColumn);
+            public decimal itbis {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablereportefactura1.itbisColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'itbis\' de la tabla \'reportefactura1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablereportefactura1.itbisColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SettelefonoNull() {
-                this[this.tablesprprocesofactura2.telefonoColumn] = global::System.Convert.DBNull;
+            public string nota {
+                get {
+                    try {
+                        return ((string)(this[this.tablereportefactura1.notaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nota\' de la tabla \'reportefactura1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablereportefactura1.notaColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsexcentoNull() {
-                return this.IsNull(this.tablesprprocesofactura2.excentoColumn);
+            public decimal neto {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablereportefactura1.netoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'neto\' de la tabla \'reportefactura1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablereportefactura1.netoColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetexcentoNull() {
-                this[this.tablesprprocesofactura2.excentoColumn] = global::System.Convert.DBNull;
+            public string nfc {
+                get {
+                    try {
+                        return ((string)(this[this.tablereportefactura1.nfcColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'nfc\' de la tabla \'reportefactura1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablereportefactura1.nfcColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Isfecha_ingresoNull() {
-                return this.IsNull(this.tablesprprocesofactura2.fecha_ingresoColumn);
+            public System.DateTime fecha_ingreso {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tablereportefactura1.fecha_ingresoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'fecha_ingreso\' de la tabla \'reportefactura1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablereportefactura1.fecha_ingresoColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Setfecha_ingresoNull() {
-                this[this.tablesprprocesofactura2.fecha_ingresoColumn] = global::System.Convert.DBNull;
+            public System.DateTime fecha_vencimiento {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tablereportefactura1.fecha_vencimientoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'fecha_vencimiento\' de la tabla \'reportefactura1\' es DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tablereportefactura1.fecha_vencimientoColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Isfecha_vencimientoNull() {
-                return this.IsNull(this.tablesprprocesofactura2.fecha_vencimientoColumn);
+            public string NombreVendedor {
+                get {
+                    return ((string)(this[this.tablereportefactura1.NombreVendedorColumn]));
+                }
+                set {
+                    this[this.tablereportefactura1.NombreVendedorColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Setfecha_vencimientoNull() {
-                this[this.tablesprprocesofactura2.fecha_vencimientoColumn] = global::System.Convert.DBNull;
+            public string descripcion {
+                get {
+                    return ((string)(this[this.tablereportefactura1.descripcionColumn]));
+                }
+                set {
+                    this[this.tablereportefactura1.descripcionColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsnotaNull() {
-                return this.IsNull(this.tablesprprocesofactura2.notaColumn);
+            public int idconcepto {
+                get {
+                    try {
+                        return ((int)(this[this.tablereportefactura1.idconceptoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'idconcepto\' de la tabla \'reportefactura1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablereportefactura1.idconceptoColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetnotaNull() {
-                this[this.tablesprprocesofactura2.notaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsnetoNull() {
-                return this.IsNull(this.tablesprprocesofactura2.netoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetnetoNull() {
-                this[this.tablesprprocesofactura2.netoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsnfcNull() {
-                return this.IsNull(this.tablesprprocesofactura2.nfcColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetnfcNull() {
-                this[this.tablesprprocesofactura2.nfcColumn] = global::System.Convert.DBNull;
+            public string TelefonoVendedor {
+                get {
+                    try {
+                        return ((string)(this[this.tablereportefactura1.TelefonoVendedorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'TelefonoVendedor\' de la tabla \'reportefactura1\' es DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tablereportefactura1.TelefonoVendedorColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsreferenciaNull() {
-                return this.IsNull(this.tablesprprocesofactura2.referenciaColumn);
+                return this.IsNull(this.tablereportefactura1.referenciaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetreferenciaNull() {
-                this[this.tablesprprocesofactura2.referenciaColumn] = global::System.Convert.DBNull;
+                this[this.tablereportefactura1.referenciaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsdireccionNull() {
+                return this.IsNull(this.tablereportefactura1.direccionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetdireccionNull() {
+                this[this.tablereportefactura1.direccionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IstelefonoNull() {
+                return this.IsNull(this.tablereportefactura1.telefonoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SettelefonoNull() {
+                this[this.tablereportefactura1.telefonoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsidvendedorNull() {
+                return this.IsNull(this.tablereportefactura1.idvendedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetidvendedorNull() {
+                this[this.tablereportefactura1.idvendedorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsexcentoNull() {
+                return this.IsNull(this.tablereportefactura1.excentoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetexcentoNull() {
+                this[this.tablereportefactura1.excentoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsitbisNull() {
+                return this.IsNull(this.tablereportefactura1.itbisColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetitbisNull() {
+                this[this.tablereportefactura1.itbisColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsnotaNull() {
+                return this.IsNull(this.tablereportefactura1.notaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetnotaNull() {
+                this[this.tablereportefactura1.notaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsnetoNull() {
+                return this.IsNull(this.tablereportefactura1.netoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetnetoNull() {
+                this[this.tablereportefactura1.netoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsnfcNull() {
+                return this.IsNull(this.tablereportefactura1.nfcColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetnfcNull() {
+                this[this.tablereportefactura1.nfcColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Isfecha_ingresoNull() {
+                return this.IsNull(this.tablereportefactura1.fecha_ingresoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Setfecha_ingresoNull() {
+                this[this.tablereportefactura1.fecha_ingresoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Isfecha_vencimientoNull() {
+                return this.IsNull(this.tablereportefactura1.fecha_vencimientoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Setfecha_vencimientoNull() {
+                this[this.tablereportefactura1.fecha_vencimientoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsidconceptoNull() {
+                return this.IsNull(this.tablereportefactura1.idconceptoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetidconceptoNull() {
+                this[this.tablereportefactura1.idconceptoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTelefonoVendedorNull() {
+                return this.IsNull(this.tablereportefactura1.TelefonoVendedorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTelefonoVendedorNull() {
+                this[this.tablereportefactura1.TelefonoVendedorColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1087,22 +1203,22 @@ namespace Duke4.CXC.Reporte {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class sprprocesofactura2RowChangeEvent : global::System.EventArgs {
+        public class reportefactura1RowChangeEvent : global::System.EventArgs {
             
-            private sprprocesofactura2Row eventRow;
+            private reportefactura1Row eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public sprprocesofactura2RowChangeEvent(sprprocesofactura2Row row, global::System.Data.DataRowAction action) {
+            public reportefactura1RowChangeEvent(reportefactura1Row row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public sprprocesofactura2Row Row {
+            public reportefactura1Row Row {
                 get {
                     return this.eventRow;
                 }
@@ -1118,7 +1234,7 @@ namespace Duke4.CXC.Reporte {
         }
     }
 }
-namespace Duke4.CXC.Reporte.Dtreportesfac2TableAdapters {
+namespace Duke4.CXC.Reporte.DataSet1234TableAdapters {
     
     
     /// <summary>
@@ -1130,7 +1246,7 @@ namespace Duke4.CXC.Reporte.Dtreportesfac2TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class sprprocesofactura2TableAdapter : global::System.ComponentModel.Component {
+    public partial class reportefactura1TableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -1144,7 +1260,7 @@ namespace Duke4.CXC.Reporte.Dtreportesfac2TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public sprprocesofactura2TableAdapter() {
+        public reportefactura1TableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -1241,22 +1357,24 @@ namespace Duke4.CXC.Reporte.Dtreportesfac2TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "sprprocesofactura2";
+            tableMapping.DataSetTable = "reportefactura1";
             tableMapping.ColumnMappings.Add("idfactura", "idfactura");
-            tableMapping.ColumnMappings.Add("secuencia", "secuencia");
             tableMapping.ColumnMappings.Add("nombre", "nombre");
+            tableMapping.ColumnMappings.Add("referencia", "referencia");
             tableMapping.ColumnMappings.Add("direccion", "direccion");
             tableMapping.ColumnMappings.Add("telefono", "telefono");
-            tableMapping.ColumnMappings.Add("Nombreempleado", "Nombreempleado");
-            tableMapping.ColumnMappings.Add("descripcion", "descripcion");
-            tableMapping.ColumnMappings.Add("balance", "balance");
+            tableMapping.ColumnMappings.Add("idvendedor", "idvendedor");
             tableMapping.ColumnMappings.Add("excento", "excento");
-            tableMapping.ColumnMappings.Add("fecha_ingreso", "fecha_ingreso");
-            tableMapping.ColumnMappings.Add("fecha_vencimiento", "fecha_vencimiento");
+            tableMapping.ColumnMappings.Add("itbis", "itbis");
             tableMapping.ColumnMappings.Add("nota", "nota");
             tableMapping.ColumnMappings.Add("neto", "neto");
             tableMapping.ColumnMappings.Add("nfc", "nfc");
-            tableMapping.ColumnMappings.Add("referencia", "referencia");
+            tableMapping.ColumnMappings.Add("fecha_ingreso", "fecha_ingreso");
+            tableMapping.ColumnMappings.Add("fecha_vencimiento", "fecha_vencimiento");
+            tableMapping.ColumnMappings.Add("NombreVendedor", "NombreVendedor");
+            tableMapping.ColumnMappings.Add("descripcion", "descripcion");
+            tableMapping.ColumnMappings.Add("idconcepto", "idconcepto");
+            tableMapping.ColumnMappings.Add("TelefonoVendedor", "TelefonoVendedor");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -1273,7 +1391,7 @@ namespace Duke4.CXC.Reporte.Dtreportesfac2TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.sprprocesofactura2";
+            this._commandCollection[0].CommandText = "dbo.reportefactura1";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idfactura", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1283,7 +1401,7 @@ namespace Duke4.CXC.Reporte.Dtreportesfac2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Dtreportesfac2.sprprocesofactura2DataTable dataTable, global::System.Nullable<int> idfactura) {
+        public virtual int Fill(DataSet1234.reportefactura1DataTable dataTable, global::System.Nullable<int> idfactura) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((idfactura.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(idfactura.Value));
@@ -1302,7 +1420,7 @@ namespace Duke4.CXC.Reporte.Dtreportesfac2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Dtreportesfac2.sprprocesofactura2DataTable GetData(global::System.Nullable<int> idfactura) {
+        public virtual DataSet1234.reportefactura1DataTable GetData(global::System.Nullable<int> idfactura) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((idfactura.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(idfactura.Value));
@@ -1310,7 +1428,7 @@ namespace Duke4.CXC.Reporte.Dtreportesfac2TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            Dtreportesfac2.sprprocesofactura2DataTable dataTable = new Dtreportesfac2.sprprocesofactura2DataTable();
+            DataSet1234.reportefactura1DataTable dataTable = new DataSet1234.reportefactura1DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1384,7 +1502,7 @@ namespace Duke4.CXC.Reporte.Dtreportesfac2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(Dtreportesfac2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DataSet1234 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1394,7 +1512,7 @@ namespace Duke4.CXC.Reporte.Dtreportesfac2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(Dtreportesfac2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DataSet1234 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1404,7 +1522,7 @@ namespace Duke4.CXC.Reporte.Dtreportesfac2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(Dtreportesfac2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DataSet1234 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1438,7 +1556,7 @@ namespace Duke4.CXC.Reporte.Dtreportesfac2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(Dtreportesfac2 dataSet) {
+        public virtual int UpdateAll(DataSet1234 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

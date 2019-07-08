@@ -144,42 +144,27 @@
     <Compile Include="CXC\Reporte\cxcrepacuerdodepagos.Designer.cs">
       <DependentUpon>cxcrepacuerdodepagos.cs</DependentUpon>
     </Compile>
-    <Compile Include="CXC\Reporte\Dsreporte2.cs">
-      <DependentUpon>Dsreporte2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="CXC\Reporte\Dsreporte2.Designer.cs">
+    <Compile Include="CXC\Reporte\DataSet1234.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Dsreporte2.xsd</DependentUpon>
+      <DependentUpon>DataSet1234.xsd</DependentUpon>
     </Compile>
-    <Compile Include="CXC\Reporte\Dtreportesfac2.Designer.cs">
+    <Compile Include="CXC\Reporte\datosfactura2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Dtreportesfac2.xsd</DependentUpon>
+      <DependentUpon>datosfactura2.xsd</DependentUpon>
     </Compile>
-    <Compile Include="CXC\Reporte\Fmreporte.cs">
+    <Compile Include="CXC\Reporte\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CXC\Reporte\Fmreporte.Designer.cs">
-      <DependentUpon>Fmreporte.cs</DependentUpon>
+    <Compile Include="CXC\Reporte\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="CXC\Reporte\Fmreportefact2.cs">
+    <Compile Include="CXC\Reporte\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CXC\Reporte\Fmreportefact2.Designer.cs">
-      <DependentUpon>Fmreportefact2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CXC\Reporte\Formfactura2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CXC\Reporte\Formfactura2.Designer.cs">
-      <DependentUpon>Formfactura2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CXC\Reporte\Forreporte22.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CXC\Reporte\Forreporte22.Designer.cs">
-      <DependentUpon>Forreporte22.cs</DependentUpon>
+    <Compile Include="CXC\Reporte\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="CXP\DataSet_General\DSCXC.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -892,20 +877,13 @@
     <EmbeddedResource Include="CXC\Proceso\Datos_factura2.resx">
       <DependentUpon>Datos_factura2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CXC\Reporte\Fmreporte.resx">
-      <DependentUpon>Fmreporte.cs</DependentUpon>
+    <EmbeddedResource Include="CXC\Reporte\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CXC\Reporte\Fmreportefact2.resx">
-      <DependentUpon>Fmreportefact2.cs</DependentUpon>
+    <EmbeddedResource Include="CXC\Reporte\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CXC\Reporte\Formfactura2.resx">
-      <DependentUpon>Formfactura2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CXC\Reporte\Forreporte22.resx">
-      <DependentUpon>Forreporte22.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CXC\Reporte\Report2.rdlc" />
-    <EmbeddedResource Include="CXC\Reporte\Reporteprueba.rdlc" />
+    <EmbeddedResource Include="CXC\Reporte\Rreportefactura.rdlc" />
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
@@ -1258,27 +1236,27 @@
     <EmbeddedResource Include="_newDesign\_repoVMenu.resx">
       <DependentUpon>_repoVMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="CXC\Reporte\Dsreporte2.xsc">
-      <DependentUpon>Dsreporte2.xsd</DependentUpon>
+    <None Include="CXC\Reporte\DataSet1234.xsc">
+      <DependentUpon>DataSet1234.xsd</DependentUpon>
     </None>
-    <None Include="CXC\Reporte\Dsreporte2.xsd">
+    <None Include="CXC\Reporte\DataSet1234.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Dsreporte2.Designer.cs</LastGenOutput>
+      <LastGenOutput>DataSet1234.Designer.cs</LastGenOutput>
     </None>
-    <None Include="CXC\Reporte\Dsreporte2.xss">
-      <DependentUpon>Dsreporte2.xsd</DependentUpon>
+    <None Include="CXC\Reporte\DataSet1234.xss">
+      <DependentUpon>DataSet1234.xsd</DependentUpon>
     </None>
-    <None Include="CXC\Reporte\Dtreportesfac2.xsc">
-      <DependentUpon>Dtreportesfac2.xsd</DependentUpon>
+    <None Include="CXC\Reporte\datosfactura2.xsc">
+      <DependentUpon>datosfactura2.xsd</DependentUpon>
     </None>
-    <None Include="CXC\Reporte\Dtreportesfac2.xsd">
+    <None Include="CXC\Reporte\datosfactura2.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Dtreportesfac2.Designer.cs</LastGenOutput>
+      <LastGenOutput>datosfactura2.Designer.cs</LastGenOutput>
     </None>
-    <None Include="CXC\Reporte\Dtreportesfac2.xss">
-      <DependentUpon>Dtreportesfac2.xsd</DependentUpon>
+    <None Include="CXC\Reporte\datosfactura2.xss">
+      <DependentUpon>datosfactura2.xsd</DependentUpon>
     </None>
     <None Include="CXP\DataSet_General\DSCXC.xsc">
       <DependentUpon>DSCXC.xsd</DependentUpon>

@@ -41,7 +41,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.BtnNotif = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.FormTitle = new Duke4.Logistica.LblBase();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,6 +88,7 @@
             this.acuerdoDePagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.históricoDePagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pruebaReporteFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pruebaEstudianteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.cxccon = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reciboDeIngresoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -118,7 +118,8 @@
             this.repoMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.procesoMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pruebaEstudianteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.purebamuestraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FormTitle = new Duke4.Logistica.LblBase();
             this.statusStrip1.SuspendLayout();
             this.HeaderPanel.SuspendLayout();
             this.panelOptions.SuspendLayout();
@@ -227,19 +228,6 @@
             this.button1.Text = " ";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // FormTitle
-            // 
-            this.FormTitle.AutoSize = true;
-            this.FormTitle.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.FormTitle.ForeColor = System.Drawing.Color.Black;
-            this.FormTitle.Location = new System.Drawing.Point(52, 12);
-            this.FormTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.FormTitle.Name = "FormTitle";
-            this.FormTitle.Size = new System.Drawing.Size(53, 16);
-            this.FormTitle.TabIndex = 0;
-            this.FormTitle.Text = "labels1";
-            this.FormTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // menuStrip2
             // 
@@ -554,7 +542,8 @@
             this.acuerdoDePagosToolStripMenuItem,
             this.históricoDePagosToolStripMenuItem,
             this.pruebaReporteFacturaToolStripMenuItem,
-            this.pruebaEstudianteToolStripMenuItem2});
+            this.pruebaEstudianteToolStripMenuItem2,
+            this.purebamuestraToolStripMenuItem});
             this.cxcrep.Name = "cxcrep";
             this.cxcrep.Size = new System.Drawing.Size(152, 22);
             this.cxcrep.Text = "Reporte";
@@ -643,6 +632,13 @@
             this.pruebaReporteFacturaToolStripMenuItem.Size = new System.Drawing.Size(235, 22);
             this.pruebaReporteFacturaToolStripMenuItem.Text = "Prueba reporte factura";
             this.pruebaReporteFacturaToolStripMenuItem.Click += new System.EventHandler(this.pruebaReporteFacturaToolStripMenuItem_Click);
+            // 
+            // pruebaEstudianteToolStripMenuItem2
+            // 
+            this.pruebaEstudianteToolStripMenuItem2.Name = "pruebaEstudianteToolStripMenuItem2";
+            this.pruebaEstudianteToolStripMenuItem2.Size = new System.Drawing.Size(235, 22);
+            this.pruebaEstudianteToolStripMenuItem2.Text = "Prueba estudiante";
+            this.pruebaEstudianteToolStripMenuItem2.Click += new System.EventHandler(this.pruebaEstudianteToolStripMenuItem2_Click);
             // 
             // cxccon
             // 
@@ -855,12 +851,25 @@
             this.procesoMenuToolStripMenuItem.Text = "Proceso Menu";
             this.procesoMenuToolStripMenuItem.Click += new System.EventHandler(this.procesoMenuToolStripMenuItem_Click);
             // 
-            // pruebaEstudianteToolStripMenuItem2
+            // purebamuestraToolStripMenuItem
             // 
-            this.pruebaEstudianteToolStripMenuItem2.Name = "pruebaEstudianteToolStripMenuItem2";
-            this.pruebaEstudianteToolStripMenuItem2.Size = new System.Drawing.Size(235, 22);
-            this.pruebaEstudianteToolStripMenuItem2.Text = "Prueba estudiante";
-            this.pruebaEstudianteToolStripMenuItem2.Click += new System.EventHandler(this.pruebaEstudianteToolStripMenuItem2_Click);
+            this.purebamuestraToolStripMenuItem.Name = "purebamuestraToolStripMenuItem";
+            this.purebamuestraToolStripMenuItem.Size = new System.Drawing.Size(235, 22);
+            this.purebamuestraToolStripMenuItem.Text = "Purebamuestra";
+            this.purebamuestraToolStripMenuItem.Click += new System.EventHandler(this.purebamuestraToolStripMenuItem_Click);
+            // 
+            // FormTitle
+            // 
+            this.FormTitle.AutoSize = true;
+            this.FormTitle.Font = new System.Drawing.Font("Verdana", 9.75F);
+            this.FormTitle.ForeColor = System.Drawing.Color.Black;
+            this.FormTitle.Location = new System.Drawing.Point(52, 12);
+            this.FormTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.FormTitle.Name = "FormTitle";
+            this.FormTitle.Size = new System.Drawing.Size(53, 16);
+            this.FormTitle.TabIndex = 0;
+            this.FormTitle.Text = "labels1";
+            this.FormTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MainMenu
             // 
@@ -984,5 +993,6 @@
         private System.Windows.Forms.ToolStripMenuItem pruebaReporteFacturaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem prueba2EstudianteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pruebaEstudianteToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem purebamuestraToolStripMenuItem;
     }
 }

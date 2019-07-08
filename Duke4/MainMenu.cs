@@ -461,5 +461,10 @@ namespace Duke4
         {
 
         }
+
+        private void purebamuestraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //CXC.Reporte.Muestrat formulario = (CXC.Reporte.Muestrat)AbrirVentana(typeof(CXC.Reporte.Muestrat));
+        }
     }
 }

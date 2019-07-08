@@ -267,7 +267,7 @@
             this.Dtpfechaingreso.CustomFormat = "dd/MM/yyyy";
             this.Dtpfechaingreso.Font = new System.Drawing.Font("Verdana", 9.75F);
             this.Dtpfechaingreso.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Dtpfechaingreso.Location = new System.Drawing.Point(460, 3);
+            this.Dtpfechaingreso.Location = new System.Drawing.Point(468, 44);
             this.Dtpfechaingreso.Name = "Dtpfechaingreso";
             this.Dtpfechaingreso.Size = new System.Drawing.Size(127, 23);
             this.Dtpfechaingreso.TabIndex = 78;
@@ -296,7 +296,7 @@
             this.Dtpfechavencimiento.CustomFormat = "dd/MM/yyyy";
             this.Dtpfechavencimiento.Font = new System.Drawing.Font("Verdana", 9.75F);
             this.Dtpfechavencimiento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Dtpfechavencimiento.Location = new System.Drawing.Point(299, 344);
+            this.Dtpfechavencimiento.Location = new System.Drawing.Point(325, 359);
             this.Dtpfechavencimiento.Name = "Dtpfechavencimiento";
             this.Dtpfechavencimiento.Size = new System.Drawing.Size(127, 23);
             this.Dtpfechavencimiento.TabIndex = 81;
@@ -416,7 +416,7 @@
             this.lblBase11.AutoSize = true;
             this.lblBase11.Font = new System.Drawing.Font("Verdana", 9.75F);
             this.lblBase11.ForeColor = System.Drawing.Color.Black;
-            this.lblBase11.Location = new System.Drawing.Point(305, 301);
+            this.lblBase11.Location = new System.Drawing.Point(322, 322);
             this.lblBase11.Name = "lblBase11";
             this.lblBase11.Size = new System.Drawing.Size(132, 16);
             this.lblBase11.TabIndex = 92;
@@ -427,7 +427,7 @@
             this.lblBase12.AutoSize = true;
             this.lblBase12.Font = new System.Drawing.Font("Verdana", 9.75F);
             this.lblBase12.ForeColor = System.Drawing.Color.Black;
-            this.lblBase12.Location = new System.Drawing.Point(354, 8);
+            this.lblBase12.Location = new System.Drawing.Point(354, 45);
             this.lblBase12.Name = "lblBase12";
             this.lblBase12.Size = new System.Drawing.Size(100, 16);
             this.lblBase12.TabIndex = 93;
@@ -462,7 +462,7 @@
             this.txtNota1.Multiline = true;
             this.txtNota1.Name = "txtNota1";
             this.txtNota1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtNota1.Size = new System.Drawing.Size(725, 126);
+            this.txtNota1.Size = new System.Drawing.Size(729, 126);
             this.txtNota1.TabIndex = 96;
             // 
             // lblBase15

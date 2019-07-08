@@ -138,6 +138,12 @@
     <Compile Include="CXC\Proceso\Datos_factura2.Designer.cs">
       <DependentUpon>Datos_factura2.cs</DependentUpon>
     </Compile>
+    <Compile Include="CXC\Proceso\Muestratodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Proceso\Muestratodo.Designer.cs">
+      <DependentUpon>Muestratodo.cs</DependentUpon>
+    </Compile>
     <Compile Include="CXC\Reporte\cxcrepacuerdodepagos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,11 @@
     </Compile>
     <Compile Include="CXC\Reporte\Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CXC\Reporte\Muestrat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Muestrat.xsd</DependentUpon>
     </Compile>
     <Compile Include="CXP\DataSet_General\DSCXC.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -877,6 +888,9 @@
     <EmbeddedResource Include="CXC\Proceso\Datos_factura2.resx">
       <DependentUpon>Datos_factura2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Proceso\Muestratodo.resx">
+      <DependentUpon>Muestratodo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CXC\Reporte\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -1257,6 +1271,17 @@
     </None>
     <None Include="CXC\Reporte\datosfactura2.xss">
       <DependentUpon>datosfactura2.xsd</DependentUpon>
+    </None>
+    <None Include="CXC\Reporte\Muestrat.xsc">
+      <DependentUpon>Muestrat.xsd</DependentUpon>
+    </None>
+    <None Include="CXC\Reporte\Muestrat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Muestrat.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CXC\Reporte\Muestrat.xss">
+      <DependentUpon>Muestrat.xsd</DependentUpon>
     </None>
     <None Include="CXP\DataSet_General\DSCXC.xsc">
       <DependentUpon>DSCXC.xsd</DependentUpon>

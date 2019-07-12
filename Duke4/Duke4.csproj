@@ -144,6 +144,12 @@
     <Compile Include="CXC\Proceso\Muestratodo.Designer.cs">
       <DependentUpon>Muestratodo.cs</DependentUpon>
     </Compile>
+    <Compile Include="CXC\Proceso\Prueba_cobro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CXC\Proceso\Prueba_cobro.Designer.cs">
+      <DependentUpon>Prueba_cobro.cs</DependentUpon>
+    </Compile>
     <Compile Include="CXC\Reporte\cxcrepacuerdodepagos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -896,6 +902,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CXC\Proceso\Muestratodo.resx">
       <DependentUpon>Muestratodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CXC\Proceso\Prueba_cobro.resx">
+      <DependentUpon>Prueba_cobro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CXC\Reporte\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

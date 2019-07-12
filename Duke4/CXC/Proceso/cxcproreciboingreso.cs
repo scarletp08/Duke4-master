@@ -772,5 +772,20 @@ namespace Duke4.CXC.Proceso
         {
 
         }
+
+        private void Dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Txttotalcob_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txtaplicar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

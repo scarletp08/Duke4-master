@@ -32,7 +32,6 @@
             this.lblBase1 = new Duke4.Logistica.LblBase();
             this.lblBase2 = new Duke4.Logistica.LblBase();
             this.Txtcodigo = new Duke4.Logistica.TxtBase();
-            this.Txtdescripcion = new Duke4.Logistica.TxtBase();
             this.Btnbuscar = new Duke4.Logistica.BtnBuscar();
             this.Dtpingreso = new Duke4.Logistica.DtpBase();
             this.lblBase3 = new Duke4.Logistica.LblBase();
@@ -51,12 +50,14 @@
             this.lblBase7 = new Duke4.Logistica.LblBase();
             this.lblBase8 = new Duke4.Logistica.LblBase();
             this.mskCedula1 = new Duke4.Logistica.MskCedula();
+            this.Txtdescripcion = new Duke4.Logistica.TxtMayuscula();
             this.MainPanel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainPanel
             // 
+            this.MainPanel.Controls.Add(this.Txtdescripcion);
             this.MainPanel.Controls.Add(this.mskCedula1);
             this.MainPanel.Controls.Add(this.lblBase8);
             this.MainPanel.Controls.Add(this.lblBase7);
@@ -72,7 +73,6 @@
             this.MainPanel.Controls.Add(this.lblBase3);
             this.MainPanel.Controls.Add(this.Dtpingreso);
             this.MainPanel.Controls.Add(this.Btnbuscar);
-            this.MainPanel.Controls.Add(this.Txtdescripcion);
             this.MainPanel.Controls.Add(this.Txtcodigo);
             this.MainPanel.Controls.Add(this.lblBase2);
             this.MainPanel.Controls.Add(this.lblBase1);
@@ -83,7 +83,6 @@
             this.MainPanel.Controls.SetChildIndex(this.lblBase2, 0);
             this.MainPanel.Controls.SetChildIndex(this.Txtcodigo, 0);
             this.MainPanel.Controls.SetChildIndex(this.LblEstado, 0);
-            this.MainPanel.Controls.SetChildIndex(this.Txtdescripcion, 0);
             this.MainPanel.Controls.SetChildIndex(this.Btnbuscar, 0);
             this.MainPanel.Controls.SetChildIndex(this.Dtpingreso, 0);
             this.MainPanel.Controls.SetChildIndex(this.lblBase3, 0);
@@ -99,6 +98,7 @@
             this.MainPanel.Controls.SetChildIndex(this.lblBase7, 0);
             this.MainPanel.Controls.SetChildIndex(this.lblBase8, 0);
             this.MainPanel.Controls.SetChildIndex(this.mskCedula1, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtdescripcion, 0);
             // 
             // LblEstado
             // 
@@ -154,13 +154,6 @@
             this.Txtcodigo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Txtcodigo_KeyDown);
             this.Txtcodigo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Txtcodigo_KeyUp);
             this.Txtcodigo.Validating += new System.ComponentModel.CancelEventHandler(this.Txtcodigo_Validating);
-            // 
-            // Txtdescripcion
-            // 
-            this.Txtdescripcion.Location = new System.Drawing.Point(140, 45);
-            this.Txtdescripcion.Name = "Txtdescripcion";
-            this.Txtdescripcion.Size = new System.Drawing.Size(162, 23);
-            this.Txtdescripcion.TabIndex = 17;
             // 
             // Btnbuscar
             // 
@@ -361,6 +354,14 @@
             this.mskCedula1.Size = new System.Drawing.Size(200, 23);
             this.mskCedula1.TabIndex = 37;
             // 
+            // Txtdescripcion
+            // 
+            this.Txtdescripcion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.Txtdescripcion.Location = new System.Drawing.Point(136, 52);
+            this.Txtdescripcion.Name = "Txtdescripcion";
+            this.Txtdescripcion.Size = new System.Drawing.Size(236, 23);
+            this.Txtdescripcion.TabIndex = 38;
+            // 
             // Prueba_estudiante
             // 
             this.ClientSize = new System.Drawing.Size(849, 459);
@@ -382,7 +383,6 @@
         private Logistica.TxtBase Txtcodigo;
         private Logistica.LblBase lblBase2;
         private Logistica.BtnBuscar Btnbuscar;
-        private Logistica.TxtBase Txtdescripcion;
         private Logistica.LblBase lblBase7;
         private Logistica.TxtBase Txtcorreo;
         private Logistica.MskTelefono msktelefono;
@@ -400,5 +400,6 @@
         private Logistica.DtpBase Dtpingreso;
         private Logistica.LblBase lblBase8;
         private Logistica.MskCedula mskCedula1;
+        private Logistica.TxtMayuscula Txtdescripcion;
     }
 }

@@ -26,39 +26,39 @@ namespace Duke4.CXC.Proceso
 
         private void btnBuscar1_Click(object sender, EventArgs e)
         {
-            MFConsulta_Cliente Consulta_Cliente = new MFConsulta_Cliente("=");
-            if (Consulta_Cliente.ShowDialog(this) == DialogResult.OK)
+            MainFormConsultaGeneral consulta = new MainFormConsultaGeneral("select idestudiante as codigo, descripcion from prudbfestudiante where nulo" + _ActivateParameter.ToString() + "nulo", "descripcion", "Estudiante");
+            if (consulta.ShowDialog(this) == DialogResult.OK)
             {
-                Txtidcliente.Text = Convert.ToString(Consulta_Cliente.MainGrid.SelectedRows[0].Cells[1].Value);
-                BtnModificar.Enabled = false;
-                Fun_Buscar_Cliente();
-
+                Txtidcliente.Text = consulta.MainGrid.SelectedRows[0].Cells[0].Value.ToString();
+                Estudiante();
             }
 
 
 
         }
-        protected void Fun_Buscar_Cliente()
+        private void Estudiante()
         {
-            if (Txtidcliente.Fun_SQL_Buscar_CodigoRegistro("cxcdbfcliente", "idcliente"))
+            if (Txtidcliente.Fun_SQL_Buscar_CodigoRegistro("prudbfestudiante", "idestudiante"))
             {
                 DataSet ds = Txtidcliente._Dataset;
-
-
-                Txtcliente.Text = ds.Tables[0].Rows[0]["nombre"].ToString();
-                Txtdireccion.Text = ds.Tables[0].Rows[0]["direccion"].ToString();
+                Txtdescripcion.Text = ds.Tables[0].Rows[0]["descripcion"].ToString();
+                
+                Txtbalance.Text = ds.Tables[0].Rows[0]["balance"].ToString();
                 Txttelefono.Text = ds.Tables[0].Rows[0]["telefono"].ToString();
+               
+               
 
-                Txtbalance.Text = FuncionesSQL.Fun_SQL_Buscar_Balance_Cliente(Txtidcliente.Text);
 
 
 
+
+
+                //LblEstado.Text = Funciones_Duke4.Funciones.Fun_Buscar_Estado_Registro(Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(ds.Tables[0].Rows[0]["nulo"].ToString()), _ActivateParameter);
 
             }
             else
             {
-
-                Txtcliente.Text = Txtdireccion.Text = Txttelefono.Text = Msknfc.Text = Txtbalance.Text = "";
+                Funciones_Duke4.Funciones.Fun_Limpiar_Formulario(MainPanel);
 
             }
         }
@@ -87,7 +87,7 @@ namespace Duke4.CXC.Proceso
         private void btnBuscar4_Click(object sender, EventArgs e)
         {
            
-            MainFormConsultaGeneral Consulta_Registro = new MainFormConsultaGeneral("select secuencia as codigo, nombre as descripcion from prudbffactura inner join cxcdbfcliente on cxcdbfcliente.idcliente=prudbffactura.idcliente where prudbffactura.nulo=0  ", "referencia", "factura");
+            MainFormConsultaGeneral Consulta_Registro = new MainFormConsultaGeneral("select secuencia as codigo, nombre as descripcion from prudbffactura inner join prudbfestudiante on prudbfestudiante.idestudiante=prudbffactura.idcliente where prudbffactura.nulo=0  ", "referencia", "factura");
             if (Consulta_Registro.ShowDialog(this) == DialogResult.OK)
             {
                 Txtfactura.Text = Consulta_Registro.MainGrid.SelectedRows[0].Cells[0].Value.ToString();
@@ -109,8 +109,8 @@ namespace Duke4.CXC.Proceso
                 {
                     DataSet ds = Txtfactura._Dataset;
                     Txtfactura.Text = ds.Tables[0].Rows[0]["secuencia"].ToString();
-                    Txtidcliente.Text = ds.Tables[0].Rows[0]["idcliente"].ToString();
-                    Fun_Buscar_Cliente();
+                    Txtidcliente.Text = ds.Tables[0].Rows[0]["idestudiante"].ToString();
+                    Estudiante();
                     Txtvendedor.Text = ds.Tables[0].Rows[0]["idvendedor"].ToString();
                     Fun_Buscar_vendedor();
                     Txtconcepto.Text = ds.Tables[0].Rows[0]["idconcepto"].ToString();
@@ -151,8 +151,8 @@ namespace Duke4.CXC.Proceso
 
 
 
-                    Txtcliente.Text = ds.Tables[0].Rows[0]["idcliente"].ToString();
-                    Fun_Buscar_Cliente();
+                    Txtcliente.Text = ds.Tables[0].Rows[0]["idestudiante"].ToString();
+                    Estudiante();
 
                     //string cmd = string.Format("SELECT      dbo.cxcdbfcliente.idcliente, dbo.cxcdbfcliente.nombre, dbo.cxcdbfcliente.direccion, dbo.cxcdbfcliente.telefono, dbo.cxcdbfcliente.referencia, dbo.nomdbfempleado.idempleado, dbo.nomdbfempleado.nombre AS nombre_vendedor, dbo.cxcdbfconcepto.idconcepto, dbo.cxcdbfconcepto.descripcion FROM         dbo.cxcdbfregistro INNER JOIn dbo.cxcdbfcliente ON dbo.cxcdbfregistro.idcliente = dbo.cxcdbfcliente.idcliente CROSS JOIN dbo.nomdbfempleado CROSS JOIN dbo.cxcdbfconcepto where dbo.cxcdbfconcepto.idconcepto='" + Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(Txtidcliente.Text.Trim()) + "' and cxcdbfcliente.nulo=0");
                     //DataSet ds2 = FuncionesSQL.Fun_Sql_Ejecutar(cmd);
@@ -177,7 +177,7 @@ namespace Duke4.CXC.Proceso
 
         private void Txtidcliente_Validating(object sender, CancelEventArgs e)
         {
-            Fun_Buscar_Cliente();
+            Estudiante();
         }
 
         private void btnBuscar2_Click(object sender, EventArgs e)
@@ -305,10 +305,10 @@ namespace Duke4.CXC.Proceso
                 else
                     idfactura = Funciones.Fun_Convierte_String_aEntrero( ds.Tables[1].Rows[0][0].ToString());
 
-                var Reporte = new Reporte_General.Form1();
-                Reporte.idfactura = idfactura;
-                Reporte.Show();
-                Reporte.Owner = this;
+                //var Reporte = new Reporte_General.Form1();
+                //Reporte.idfactura = idfactura;
+                //Reporte.Show();
+                //Reporte.Owner = this;
 
 
                 Funciones_Duke4.Funciones.Fun_Limpiar_Formulario(MainPanel);

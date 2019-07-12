@@ -640,6 +640,11 @@ namespace Duke4.CXC.Proceso
             else
                 Mskncf.Visible = false;
         }
+
+        private void Dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 
 }

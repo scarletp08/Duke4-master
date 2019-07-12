@@ -266,7 +266,7 @@ namespace Duke4.CXC.Proceso
 
                     if (Convert.ToBoolean(item.Cells[""].EditedFormattedValue))
                     {
-                        sumaaplicar += Funciones.Fun_Convierte_String_aDecimal(Convert.ToString(item.Cells["dgvaplicar"].Value));
+                        sumaaplicar += Funciones.Fun_Convierte_String_aDecimal(Convert.ToString(item.Cells[""].Value));
                        
                     }
                 }
@@ -433,6 +433,21 @@ namespace Duke4.CXC.Proceso
                 Dtpfechadeposito.MinDate = Dtpfecha.Value.AddDays(0);
 
             }
+        }
+
+        private void Txtaplicar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dgv_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+
+        }
+
+        private void Txtcodigocliente_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

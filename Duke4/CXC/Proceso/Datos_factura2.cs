@@ -34,7 +34,14 @@ namespace Duke4.CXC.Proceso
             }
             
         }
+        public static string Fun_SQL_Buscar_Balance_Cliente(string idcliente)
+        {
+            string cmd = "select sum(cxcdbfregistro.balance) from cxcdbfregistro where cxcdbfregistro.idcliente ='" + idcliente + "' and cxcdbfregistro.nulo=0";
 
+            DataSet ds = FuncionesSQL.Fun_Sql_Ejecutar(cmd);
+
+            return ds.Tables[0].Rows[0][0].ToString();
+        }
         private void Fun_Buscar_Cliente()
         {
             if(Txtidcliente.Fun_SQL_Buscar_CodigoRegistro("cxcdbfcliente", "idcliente"))
@@ -46,6 +53,9 @@ namespace Duke4.CXC.Proceso
                 Txttelefono.Text = ds.Tables[0].Rows[0]["telefono"].ToString();
                 Txtdireccion.Text = ds.Tables[0].Rows[0]["direccion"].ToString();
                 Txtbalance.Text = FuncionesSQL.Fun_SQL_Buscar_Balance_Cliente(Txtidcliente.Text);
+
+
+
             }
         }
 
@@ -109,8 +119,9 @@ namespace Duke4.CXC.Proceso
         {
             Double itbis = 0.18;
             Txtitbis.Text = Convert.ToString(Funciones_Duke4.Funciones.Fun_Convierte_String_aDecimal(Txtimporte.Text) * itbis);
-
+           
             Txtneto.Text = Convert.ToString(Funciones_Duke4.Funciones.Fun_Convierte_String_aDecimal(Txtimporte.Text) + (Funciones_Duke4.Funciones.Fun_Convierte_String_aDecimal(Txtitbis.Text)) + (Funciones_Duke4.Funciones.Fun_Convierte_String_aDecimal(Txtexcento.Text)));
+            Txtbalance.Text = Txtneto.Text;
         }
 
         private void Txtimporte_Validating(object sender, CancelEventArgs e)
@@ -209,7 +220,7 @@ namespace Duke4.CXC.Proceso
                     Dtpfechavencimiento.Value = Convert.ToDateTime(ds.Tables[0].Rows[0]["fecha_vencimiento"].ToString());
                     Mskrnc.Text = ds.Tables[0].Rows[0]["nfc"].ToString();
                     Cmbmoneda.SelectedValue = ds.Tables[0].Rows[0]["moneda"].ToString();
-
+                    Txtbalance.Text= ds.Tables[0].Rows[0]["Balance"].ToString();
 
                 }
                 else
@@ -223,7 +234,7 @@ namespace Duke4.CXC.Proceso
         {
 
         }
-
+        
         private void Datos_factura2_Load(object sender, EventArgs e)
         {
             Fun_Set_Nombre_Formulario("Prueba Estudiante #2",this);
@@ -246,7 +257,7 @@ namespace Duke4.CXC.Proceso
             if (!Funciones_Duke4.Funciones.Fun_Validar_Campos_Vacios(array))
             {
                 int idfactura = 0;
-                string cmd = string.Format("exec sprudbffactura2 '{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}','{15}','{16}'",
+                string cmd = string.Format("exec sprudbffactura2 '{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}','{15}','{16}','{17}'",
                     _OpcionSQL, Properties.Settings.Default.idsesion, 1,
                     Txtfactura.Text,
                     Funciones_Duke4.Funciones.Fun_Convierte_String_aEntrero(Txtidcliente.Text),
@@ -263,7 +274,9 @@ namespace Duke4.CXC.Proceso
 
                     Mskrnc.Text,
                     Cmbmoneda.SelectedValue,
-                    Funciones_Duke4.Funciones.Fun_Convertir_Fecha_FormatoyyyMMdd(Dtpfechavencimiento));
+                  
+                    Funciones_Duke4.Funciones.Fun_Convertir_Fecha_FormatoyyyMMdd(Dtpfechavencimiento),
+                Txtbalance.Text);
                 DataSet ds = FuncionesSQL.Fun_Sql_Ejecutar(cmd);
 
                 if (_OpcionSQL == "Modificar")
@@ -271,10 +284,10 @@ namespace Duke4.CXC.Proceso
                 else
                     idfactura = Funciones.Fun_Convierte_String_aEntrero(ds.Tables[1].Rows[0][0].ToString());
 
-                var Reporte = new Reporte.Form2();
-                Reporte.Idfactura = idfactura;
-                Reporte.Show();
-               Reporte.Owner = this;
+               // var Reporte = new Reporte.Form2();
+               // Reporte.Idfactura = idfactura;
+               // Reporte.Show();
+               //Reporte.Owner = this;
 
 
                 Funciones_Duke4.Funciones.Fun_Limpiar_Formulario(MainPanel);
@@ -310,6 +323,11 @@ namespace Duke4.CXC.Proceso
         private void btnBase1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void Txtfactura_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

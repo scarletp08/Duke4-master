@@ -429,11 +429,11 @@ namespace Duke4.CXC.Proceso
 
                   if (Ckbimprimir.Checked) 
                 {
-                    var Reporte_Registro = new Reporte_General.CXC.cxcrepregistro01(); 
+                    var Reporte_Registro = new Reporte_General.CXC.cxcrepregistro01();
                     if (_OpcionSQL == "Modificar")
-                        Reporte_Registro._id = ds.Tables[0].Rows[0][0].ToString(); 
+                        Reporte_Registro._id = ds.Tables[0].Rows[0][0].ToString();
                     else
-                        Reporte_Registro._id = ds.Tables[1].Rows[0][0].ToString(); 
+                        Reporte_Registro._id = ds.Tables[1].Rows[0][0].ToString();
 
                     Reporte_Registro.Show();
                     Reporte_Registro.Owner = this;

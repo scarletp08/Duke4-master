@@ -115,6 +115,39 @@
             this.MainPanel.Controls.Add(this.myLabel16);
             this.MainPanel.Location = new System.Drawing.Point(1, 105);
             this.MainPanel.Size = new System.Drawing.Size(795, 480);
+            this.MainPanel.Controls.SetChildIndex(this.myLabel16, 0);
+            this.MainPanel.Controls.SetChildIndex(this.myLabel14, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Cmbmoneda, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtnombrevendedor, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Ckbimprimir, 0);
+            this.MainPanel.Controls.SetChildIndex(this.myLabel12, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtcodigovendedor, 0);
+            this.MainPanel.Controls.SetChildIndex(this.myLabel5, 0);
+            this.MainPanel.Controls.SetChildIndex(this.BtnBuscarCliente, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtnombrecliente, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txttelefonocliente, 0);
+            this.MainPanel.Controls.SetChildIndex(this.myLabel4, 0);
+            this.MainPanel.Controls.SetChildIndex(this.myLabel17, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtcodigocliente, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtdireccioncliente, 0);
+            this.MainPanel.Controls.SetChildIndex(this.BtnBuscarVendedor, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtreferencia, 0);
+            this.MainPanel.Controls.SetChildIndex(this.myLabel3, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtbalance, 0);
+            this.MainPanel.Controls.SetChildIndex(this.myLabel2, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Dtpfecha, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtchequefuturo, 0);
+            this.MainPanel.Controls.SetChildIndex(this.myLabel1, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Dgv, 0);
+            this.MainPanel.Controls.SetChildIndex(this.lblBase1, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Cmbbanco, 0);
+            this.MainPanel.Controls.SetChildIndex(this.myLabel7, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtaplicar, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Txtnock, 0);
+            this.MainPanel.Controls.SetChildIndex(this.lblBase2, 0);
+            this.MainPanel.Controls.SetChildIndex(this.lblBase3, 0);
+            this.MainPanel.Controls.SetChildIndex(this.Dtpfechadeposito, 0);
+            this.MainPanel.Controls.SetChildIndex(this.LblFunctionName, 0);
             // 
             // LblAlerta
             // 
@@ -125,6 +158,8 @@
             // LblFunctionName
             // 
             this.LblFunctionName.Location = new System.Drawing.Point(744, 42);
+            this.LblFunctionName.Size = new System.Drawing.Size(0, 32);
+            this.LblFunctionName.Text = "";
             // 
             // panel2
             // 
@@ -177,6 +212,8 @@
             this.Dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Dgv.Size = new System.Drawing.Size(761, 275);
             this.Dgv.TabIndex = 388;
+            this.Dgv.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.Dgv_CellBeginEdit);
+            this.Dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_CellEndEdit);
             this.Dgv.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_CellEndEdit);
             this.Dgv.CurrentCellDirtyStateChanged += new System.EventHandler(this.Dgv_CurrentCellDirtyStateChanged);
             // 
@@ -372,6 +409,7 @@
             this.Txtcodigocliente.Size = new System.Drawing.Size(100, 23);
             this.Txtcodigocliente.TabIndex = 367;
             this.Txtcodigocliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Txtcodigocliente.TextChanged += new System.EventHandler(this.Txtcodigocliente_TextChanged);
             this.Txtcodigocliente.Validating += new System.ComponentModel.CancelEventHandler(this.Txtcodigocliente_Validating);
             // 
             // myLabel17
@@ -559,6 +597,7 @@
             this.Txtaplicar.Size = new System.Drawing.Size(100, 23);
             this.Txtaplicar.TabIndex = 369;
             this.Txtaplicar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Txtaplicar.TextChanged += new System.EventHandler(this.Txtaplicar_TextChanged);
             this.Txtaplicar.Validating += new System.ComponentModel.CancelEventHandler(this.Txtaplicar_Validating);
             // 
             // myLabel7

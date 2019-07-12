@@ -382,13 +382,14 @@
             dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.Dgv.DefaultCellStyle = dataGridViewCellStyle10;
             this.Dgv.Font = new System.Drawing.Font("Verdana", 8.5F);
-            this.Dgv.Location = new System.Drawing.Point(21, 154);
+            this.Dgv.Location = new System.Drawing.Point(26, 153);
             this.Dgv.MultiSelect = false;
             this.Dgv.Name = "Dgv";
             this.Dgv.RowHeadersVisible = false;
             this.Dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Dgv.Size = new System.Drawing.Size(921, 285);
             this.Dgv.TabIndex = 352;
+            this.Dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_CellContentClick);
             this.Dgv.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_CellEndEdit);
             this.Dgv.CurrentCellDirtyStateChanged += new System.EventHandler(this.Dgv_CurrentCellDirtyStateChanged);
             // 
@@ -792,6 +793,7 @@
             this.Txttotalcob.TabIndex = 343;
             this.Txttotalcob.TabStop = false;
             this.Txttotalcob.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Txttotalcob.TextChanged += new System.EventHandler(this.Txttotalcob_TextChanged);
             // 
             // Txtaplicar
             // 
@@ -802,6 +804,7 @@
             this.Txtaplicar.Size = new System.Drawing.Size(100, 23);
             this.Txtaplicar.TabIndex = 329;
             this.Txtaplicar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Txtaplicar.TextChanged += new System.EventHandler(this.Txtaplicar_TextChanged);
             this.Txtaplicar.Validating += new System.ComponentModel.CancelEventHandler(this.Txtaplicar_Validating);
             // 
             // myLabel7

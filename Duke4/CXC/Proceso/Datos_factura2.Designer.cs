@@ -61,7 +61,6 @@
             this.Txtnombre = new Duke4.Logistica.TxtBase();
             this.BtnBuscarfactura = new Duke4.Logistica.BtnBuscar();
             this.BtnBuscarcliente = new Duke4.Logistica.BtnBuscar();
-            this.lblBase3 = new Duke4.Logistica.LblBase();
             this.Txtdescripcionconcepto = new Duke4.Logistica.TxtBase();
             this.lblBase16 = new Duke4.Logistica.LblBase();
             this.Txtitbis = new Duke4.Logistica.TxtBase();
@@ -89,7 +88,6 @@
             this.MainPanel.Controls.Add(this.Txtitbis);
             this.MainPanel.Controls.Add(this.lblBase16);
             this.MainPanel.Controls.Add(this.Txtdescripcionconcepto);
-            this.MainPanel.Controls.Add(this.lblBase3);
             this.MainPanel.Controls.Add(this.BtnBuscarcliente);
             this.MainPanel.Controls.Add(this.BtnBuscarfactura);
             this.MainPanel.Controls.Add(this.Txtnombre);
@@ -157,7 +155,6 @@
             this.MainPanel.Controls.SetChildIndex(this.Txtnombre, 0);
             this.MainPanel.Controls.SetChildIndex(this.BtnBuscarfactura, 0);
             this.MainPanel.Controls.SetChildIndex(this.BtnBuscarcliente, 0);
-            this.MainPanel.Controls.SetChildIndex(this.lblBase3, 0);
             this.MainPanel.Controls.SetChildIndex(this.Txtdescripcionconcepto, 0);
             this.MainPanel.Controls.SetChildIndex(this.lblBase16, 0);
             this.MainPanel.Controls.SetChildIndex(this.Txtitbis, 0);
@@ -197,6 +194,7 @@
             this.Txtfactura.Name = "Txtfactura";
             this.Txtfactura.Size = new System.Drawing.Size(100, 23);
             this.Txtfactura.TabIndex = 68;
+            this.Txtfactura.TextChanged += new System.EventHandler(this.Txtfactura_TextChanged);
             this.Txtfactura.Validating += new System.ComponentModel.CancelEventHandler(this.Txtfactura_Validating);
             // 
             // Txtidcliente
@@ -249,10 +247,11 @@
             // Txtbalance
             // 
             this.Txtbalance.Enabled = false;
-            this.Txtbalance.Location = new System.Drawing.Point(468, 126);
+            this.Txtbalance.Location = new System.Drawing.Point(753, 145);
             this.Txtbalance.Name = "Txtbalance";
-            this.Txtbalance.Size = new System.Drawing.Size(295, 23);
+            this.Txtbalance.Size = new System.Drawing.Size(10, 23);
             this.Txtbalance.TabIndex = 75;
+            this.Txtbalance.Visible = false;
             // 
             // Txtnombrevendedor
             // 
@@ -383,7 +382,7 @@
             this.lblBase8.AutoSize = true;
             this.lblBase8.Font = new System.Drawing.Font("Verdana", 9.75F);
             this.lblBase8.ForeColor = System.Drawing.Color.Black;
-            this.lblBase8.Location = new System.Drawing.Point(379, 174);
+            this.lblBase8.Location = new System.Drawing.Point(380, 155);
             this.lblBase8.Name = "lblBase8";
             this.lblBase8.Size = new System.Drawing.Size(83, 16);
             this.lblBase8.TabIndex = 89;
@@ -514,21 +513,10 @@
             this.BtnBuscarcliente.UseVisualStyleBackColor = false;
             this.BtnBuscarcliente.Click += new System.EventHandler(this.btnBuscar2_Click);
             // 
-            // lblBase3
-            // 
-            this.lblBase3.AutoSize = true;
-            this.lblBase3.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.lblBase3.ForeColor = System.Drawing.Color.Black;
-            this.lblBase3.Location = new System.Drawing.Point(380, 129);
-            this.lblBase3.Name = "lblBase3";
-            this.lblBase3.Size = new System.Drawing.Size(59, 16);
-            this.lblBase3.TabIndex = 101;
-            this.lblBase3.Text = "Balance";
-            // 
             // Txtdescripcionconcepto
             // 
             this.Txtdescripcionconcepto.Enabled = false;
-            this.Txtdescripcionconcepto.Location = new System.Drawing.Point(468, 167);
+            this.Txtdescripcionconcepto.Location = new System.Drawing.Point(468, 148);
             this.Txtdescripcionconcepto.Name = "Txtdescripcionconcepto";
             this.Txtdescripcionconcepto.Size = new System.Drawing.Size(295, 23);
             this.Txtdescripcionconcepto.TabIndex = 102;
@@ -685,7 +673,6 @@
         private Logistica.TxtBase Txtnombre;
         private Logistica.LblBase lblBase15;
         private Logistica.TxtBase Txtdescripcionconcepto;
-        private Logistica.LblBase lblBase3;
         private Logistica.TxtBase Txtneto;
         private Logistica.TxtBase Txtitbis;
         private Logistica.LblBase lblBase16;

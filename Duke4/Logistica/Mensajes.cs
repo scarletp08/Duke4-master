@@ -63,7 +63,10 @@ namespace Duke4.Logistica
         {
             MessageBox.Show("Registros salvados exitosamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
+        public static void fcobro()
+        {
+            MessageBox.Show("Este cliente no tiene cobros pendientes", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
         public static void Msgb_NoFacturas_EnMoneda()
         {
             MessageBox.Show("Este cliente no tiene documentos pendiente de este tipo de moneda", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
